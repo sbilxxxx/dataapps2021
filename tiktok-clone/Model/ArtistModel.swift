@@ -38,20 +38,20 @@ class Post {
     var date : String
     var title : String
     var body : String
-    var photo : UIImage?
+    var buybutton : String?
     
     //MARK: Initialization
     
-    init?(date: String, title: String, body: String, photo: UIImage?){
+    init?(date: String, title: String, body: String, buybutton: String){
         
-        if date.isEmpty || title.isEmpty || body.isEmpty {
+        if date.isEmpty || title.isEmpty || body.isEmpty || buybutton.isEmpty {
             return nil
             }
         
         self.date = date
         self.title = title
         self.body = body
-        self.photo = photo
+        self.buybutton = buybutton
         
     }
 }
