@@ -24,6 +24,7 @@ class DetailPostViewController: UIViewController {
         PostDate.text = eachpost.date
         PostTitle.text = eachpost.title
         PostBody.text = eachpost.body
+       
         
         // Do any additional setup after loading the view.
     }

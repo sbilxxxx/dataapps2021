@@ -27,6 +27,8 @@ class PostTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        loadPosts()
     }
 
     // MARK: - Table view data source
@@ -125,5 +127,59 @@ class PostTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    private func loadPosts() {
+
+        if id == 0{
+            let Benjamin_LiveNews1 = "2/11にオンラインライブを行います！僕にとって初めてのオンラインライブですが間違いなく盛り上がるのでぜひ見に来てください！チケットは下のチケット購入蘭から購入してください！皆さんの参加をお待ちしております！グッズも販売するのでそちらもぜひ！"
+            
+        
+            let Benjamin_NewSong1 = "本日2/4に新曲をリリースしました！曲のタイトルは'国分町に愛はなかった'です！この曲には寂しさを埋め合わせるための行為が更なる寂しさを生むというこの時期あるあるな感情をトラックにしました！下の再生ボタンから聞いてみてください！"
+    
+            guard let News1 = Post(date:"2/9/2021 13:15", title: "ライブのお知らせ", body:Benjamin_LiveNews1, buybutton: "¥1000 購入する")else{
+                fatalError("Unable to instance Benjamin")
+            }
+            
+            guard let News2 = Post(date:"2/6/2021 18:26", title: "新曲のお知らせ！", body: Benjamin_NewSong1, buybutton: "")else{
+                fatalError("Unable to instance Benjamin")
+            }
+            
+            posts += [News1, News2]
+        }
+        if id == 1{
+            let ShuntaroNews1 = "1/16にアーケードでストリートライブやるので皆さん来てください！"
+            
+                    /*
+            let Benjamin_NewSong1 = "本日2/4に新曲をリリースしました！曲のタイトルは'国分町に愛はなかった'です！この曲には寂しさを埋め合わせるための行為が更なる寂しさを生むというこの時期あるあるな感情をトラックにしました！下の再生ボタンから聞いてみてください！"
+            */
+            guard let News1 = Post(date:"2/9/2021 13:15", title: "告知！", body:ShuntaroNews1, buybutton: "")else{
+                fatalError("Unable to instance Benjamin")
+            }
+            /*
+            guard let NewSongNews1 = Post(date:"2/6/2021 18:26", title: "新曲のお知らせ！")else{
+                fatalError("Unable to instance Benjamin")
+            }
+            */
+            posts += [News1]
+        }
+        if id == 2{
+            let ZaimaNews1 = "今度新曲を出します！こうご期待...！"
+            
+                    /*
+            let Benjamin_NewSong1 = "本日2/4に新曲をリリースしました！曲のタイトルは'国分町に愛はなかった'です！この曲には寂しさを埋め合わせるための行為が更なる寂しさを生むというこの時期あるあるな感情をトラックにしました！下の再生ボタンから聞いてみてください！"
+            */
+            guard let News1 = Post(date:"2/9/2021 13:15", title: "新曲出すよ！", body:ZaimaNews1, buybutton: "")else{
+                fatalError("Unable to instance Benjamin")
+            }
+            /*
+            guard let NewSongNews1 = Post(date:"2/6/2021 18:26", title: "新曲のお知らせ！")else{
+                fatalError("Unable to instance Benjamin")
+            }
+            */
+            posts += [News1]
+        }
+
+    }
+
 
 }
