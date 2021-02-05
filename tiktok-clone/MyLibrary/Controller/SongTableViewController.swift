@@ -51,6 +51,8 @@ class SongTableViewController: UITableViewController {
 
         return cell
     }
+    
+    
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -109,7 +111,7 @@ class SongTableViewController: UITableViewController {
     private func loadSong() {
         
         //MARK: Property
-        let songview = UIImage(named: "music")
+        let songview = UIImage(named: "disco")
         
         if id == 0 {
             guard let song1 = Song(songname: "国分町に愛はなかった", jacket: songview)else{

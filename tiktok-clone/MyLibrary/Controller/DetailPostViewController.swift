@@ -15,7 +15,6 @@ class DetailPostViewController: UIViewController {
     @IBOutlet weak var PostBody: UILabel!
     
     var eachpost: Post!
-    var id: Int!
     
 
     override func viewDidLoad() {

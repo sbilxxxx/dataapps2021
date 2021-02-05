@@ -47,6 +47,7 @@
                                         <constraint firstItem="gfc-XD-IO3" firstAttribute="top" secondItem="rSL-qE-FYw" secondAttribute="top" id="w5R-fb-1OJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.76922419580000001" green="0.83209789619999996" blue="0.89530456849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="ArtistName" destination="NIB-FZ-w9h" id="G5q-Fw-08I"/>
                                     <outlet property="ArtistView" destination="gfc-XD-IO3" id="O7E-dN-4DS"/>
@@ -105,7 +106,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsU-dS-Q2c">
                                 <rect key="frame" x="302" y="458" width="92" height="30"/>
-                                <state key="normal" title="フォロー済み"/>
+                                <state key="normal" title="フォロー済み">
+                                    <color key="titleColor" red="1" green="0.5174813519" blue="0.057799007909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIi-M8-5n8">
                                 <rect key="frame" x="37" y="508" width="340" height="20.5"/>
@@ -118,28 +121,34 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4t-5s-LSy">
                                 <rect key="frame" x="20" y="616.5" width="374" height="30"/>
-                                <state key="normal" title="Song"/>
+                                <state key="normal" title="Song">
+                                    <color key="titleColor" red="1" green="0.5174813519" blue="0.057799007909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="q0U-KZ-fZz" kind="show" identifier="showSongSegue" id="1aQ-VU-F5W"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfR-PX-snO">
                                 <rect key="frame" x="20" y="666.5" width="374" height="30"/>
-                                <state key="normal" title="News"/>
+                                <state key="normal" title="News">
+                                    <color key="titleColor" red="1" green="0.5174813519" blue="0.057799007909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="mir-cQ-cRa" kind="show" identifier="showNewsSegue" id="eLr-Ph-OHM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYL-aZ-JOS">
                                 <rect key="frame" x="20" y="566.5" width="374" height="30"/>
-                                <state key="normal" title="Music Video"/>
+                                <state key="normal" title="Music Video">
+                                    <color key="titleColor" red="1" green="0.5174813519" blue="0.057799007909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="pIF-9b-yVy" kind="show" identifier="showMVSgue" id="W6S-wJ-2FG"/>
+                                    <segue destination="pIF-9b-yVy" kind="show" identifier="showMVSegue" id="W6S-wJ-2FG"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pzZ-eC-AFC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.76922419580000001" green="0.83209789619999996" blue="0.89530456849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="X4t-5s-LSy" firstAttribute="leading" secondItem="pzZ-eC-AFC" secondAttribute="leading" constant="20" id="2GE-p3-Rub"/>
                             <constraint firstItem="9Aq-MW-7G5" firstAttribute="leading" secondItem="pzZ-eC-AFC" secondAttribute="leading" constant="20" id="4dG-Ub-tx7"/>
@@ -221,6 +230,7 @@
                                         <constraint firstItem="6FY-T6-qzb" firstAttribute="leading" secondItem="B3d-oJ-6B9" secondAttribute="leading" id="zzf-EC-Nez"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.76922419580000001" green="0.83209789619999996" blue="0.89530456849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="SongJacket" destination="6FY-T6-qzb" id="em9-bZ-E86"/>
                                     <outlet property="SongTitle" destination="dfS-t6-oRD" id="NPb-NM-uSc"/>
@@ -289,6 +299,7 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="kEX-2c-UuS" secondAttribute="trailing" constant="20" id="xWG-LW-TjF"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.76922419580000001" green="0.83209789619999996" blue="0.89530456849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="PostBody" destination="kEX-2c-UuS" id="22H-uS-pkQ"/>
                                     <outlet property="PostDate" destination="dRW-TF-jJX" id="NXd-Kx-kja"/>
@@ -342,7 +353,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Px4-Xl-Dwq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.76922419580000001" green="0.83209789619999996" blue="0.89530456849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="N4F-lH-HFj" firstAttribute="top" secondItem="30d-b3-BE6" secondAttribute="bottom" constant="10" id="2a3-EG-nZ8"/>
                             <constraint firstItem="Px4-Xl-Dwq" firstAttribute="trailing" secondItem="WGP-VY-DN5" secondAttribute="trailing" constant="40" id="6gW-6c-fTm"/>
@@ -404,6 +415,7 @@
                                         <constraint firstItem="vfy-X6-1Sf" firstAttribute="leading" secondItem="hk0-KE-J5t" secondAttribute="trailing" constant="8" id="y2G-JS-Gyc"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.76922419580000001" green="0.83209789619999996" blue="0.89530456849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="MVName" destination="vfy-X6-1Sf" id="RWR-IO-njN"/>
                                     <outlet property="MVThumb" destination="hk0-KE-J5t" id="vpS-oV-Mq8"/>
@@ -425,10 +437,14 @@
         <scene sceneID="Hgl-hV-F2j">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cYA-Vb-Q4s" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="books.vertical.fill" catalog="system" id="Qbx-24-F9r"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="G1d-aZ-26g">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.5174813519" blue="0.057799007909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.13725490200000001" green="0.37647058820000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -441,6 +457,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
