@@ -43,7 +43,7 @@ class PostTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cellIdentifier = "MyLibraryModel"
+        let cellIdentifier = "PostCell"
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PostTableViewCell  else {
                fatalError("The dequeued cell is not an instance of MealTableViewCell.")
@@ -53,6 +53,7 @@ class PostTableViewController: UITableViewController {
         
         cell.PostDate.text = post.date
         cell.PostTitle.text = post.title
+        cell.PostBody.text = post.body
         
 
         // Configure the cell...
@@ -68,7 +69,6 @@ class PostTableViewController: UITableViewController {
                 }
                 
                 destination.eachpost = posts[indexPath.row]
-                destination.id = indexPath.row
             }
         }
     }
@@ -136,11 +136,11 @@ class PostTableViewController: UITableViewController {
         
             let Benjamin_NewSong1 = "本日2/4に新曲をリリースしました！曲のタイトルは'国分町に愛はなかった'です！この曲には寂しさを埋め合わせるための行為が更なる寂しさを生むというこの時期あるあるな感情をトラックにしました！下の再生ボタンから聞いてみてください！"
     
-            guard let News1 = Post(date:"2/9/2021 13:15", title: "ライブのお知らせ", body:Benjamin_LiveNews1, buybutton: "¥1000 購入する")else{
+            guard let News1 = Post(date:"2/9/2021 13:15", title: "ライブのお知らせ", body:Benjamin_LiveNews1)else{
                 fatalError("Unable to instance Benjamin")
             }
             
-            guard let News2 = Post(date:"2/6/2021 18:26", title: "新曲のお知らせ！", body: Benjamin_NewSong1, buybutton: "")else{
+            guard let News2 = Post(date:"2/6/2021 18:26", title: "新曲のお知らせ！", body: Benjamin_NewSong1)else{
                 fatalError("Unable to instance Benjamin")
             }
             
@@ -152,7 +152,7 @@ class PostTableViewController: UITableViewController {
                     /*
             let Benjamin_NewSong1 = "本日2/4に新曲をリリースしました！曲のタイトルは'国分町に愛はなかった'です！この曲には寂しさを埋め合わせるための行為が更なる寂しさを生むというこの時期あるあるな感情をトラックにしました！下の再生ボタンから聞いてみてください！"
             */
-            guard let News1 = Post(date:"2/9/2021 13:15", title: "告知！", body:ShuntaroNews1, buybutton: "")else{
+            guard let News1 = Post(date:"2/9/2021 13:15", title: "告知！", body:ShuntaroNews1)else{
                 fatalError("Unable to instance Benjamin")
             }
             /*
@@ -168,7 +168,7 @@ class PostTableViewController: UITableViewController {
                     /*
             let Benjamin_NewSong1 = "本日2/4に新曲をリリースしました！曲のタイトルは'国分町に愛はなかった'です！この曲には寂しさを埋め合わせるための行為が更なる寂しさを生むというこの時期あるあるな感情をトラックにしました！下の再生ボタンから聞いてみてください！"
             */
-            guard let News1 = Post(date:"2/9/2021 13:15", title: "新曲出すよ！", body:ZaimaNews1, buybutton: "")else{
+            guard let News1 = Post(date:"2/9/2021 13:15", title: "新曲出すよ！", body:ZaimaNews1)else{
                 fatalError("Unable to instance Benjamin")
             }
             /*
