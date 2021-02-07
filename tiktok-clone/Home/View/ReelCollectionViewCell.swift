@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class HomeCollectionViewCell: UICollectionViewCell {
+class ReelCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var videoContainer: UIView!
     

@@ -9,19 +9,19 @@
 import UIKit
 
 
-class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+class ReelViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
 
     
     @IBOutlet weak var VideoView: UIView!
-    @IBOutlet weak var homeCollectionView: UICollectionView!
+    @IBOutlet weak var reelCollectionView: UICollectionView!
     
     let listaComTodosVideos: Array<Video> = VideoDAO().returnAllVideos()
     var listaVideos: Array<Video> = []
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeCollectionView.dataSource = self
-        homeCollectionView.delegate = self
+        reelCollectionView.dataSource = self
+        reelCollectionView.delegate = self
         listaVideos = listaComTodosVideos
     }
     
@@ -30,7 +30,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
           }
           
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let celulaVideo = collectionView.dequeueReusableCell(withReuseIdentifier: "cellVideo", for: indexPath) as! HomeCollectionViewCell
+        let celulaVideo = collectionView.dequeueReusableCell(withReuseIdentifier: "cellVideo", for: indexPath) as! ReelCollectionViewCell
         let videoAtual = listaVideos[indexPath.row]
         celulaVideo.configure(with: videoAtual)
         return celulaVideo
