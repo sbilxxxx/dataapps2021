@@ -12,11 +12,11 @@ class VideoDAO: NSObject {
     
     func returnAllVideos() -> Array<Video> {
         
-        let video1 = Video(url: "Reel1", format: "mp4", caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
-        let video2 = Video(url: "Reel2", format: "mp4", caption: "caption 2", username: "@username 2", audioTrackName: "audio 2", likesNumber: "260k", commentsNumber: "1.4k", shareNumber: "370")
-        let video3 = Video(url: "Reel3", format: "mp4", caption: "caption 3", username: "@username 3", audioTrackName: "audio 3", likesNumber: "1.1M", commentsNumber: "56k", shareNumber: "5k")
-        let video4 = Video(url: "Reel4", format: "mp4", caption: "caption 4", username: "@username 4", audioTrackName: "audio 4", likesNumber: "16.4k", commentsNumber: "200", shareNumber: "42")
-        let video5 = Video(url: "Reel5", format: "mp4", caption: "caption 5", username: "@username 5", audioTrackName: "audio 5", likesNumber: "260k", commentsNumber: "10.6k", shareNumber: "900")
+        let video1 = Video(url: "Reel1", format: "mp4", caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", artistImage: UIImage(named: "artist1_sqrt"), bio: "", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
+        let video2 = Video(url: "Reel1", format: "mp4", caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", artistImage: UIImage(named: "artist1_sqrt"), bio: "", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
+        let video3 = Video(url: "Reel1", format: "mp4", caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", artistImage: UIImage(named: "artist1_sqrt"), bio: "", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
+        let video4 = Video(url: "Reel1", format: "mp4", caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", artistImage: UIImage(named: "artist1_sqrt"), bio: "", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
+        let video5 = Video(url: "Reel1", format: "mp4", caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", artistImage: UIImage(named: "artist1_sqrt"), bio: "", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
         
         """
         let video6 = Video(url: "video6", format: "mp4", caption: "caption 6", username: "@username 6", audioTrackName: "audio 6", likesNumber: "380", commentsNumber: "10", shareNumber: "0")

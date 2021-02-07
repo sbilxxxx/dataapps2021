@@ -13,12 +13,11 @@ class RadioDAO: NSObject {
     
     func returnAllRadios() -> Array<Radio> {
         
-        let song1 = Radio(url: "Song1", format: "mp3", jacket: UIImage(named: "Radio1"), caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
-        let song2 = Radio(url: "Song1", format: "mp3", jacket: UIImage(named: "Radio2"), caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
-        let song3 = Radio(url: "Song1", format: "mp3", jacket: UIImage(named: "Radio3"), caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
-        let song4 = Radio(url: "Song1", format: "mp3", jacket: UIImage(named: "Radio4"), caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
-        let song5 = Radio(url: "Song1", format: "mp3", jacket: UIImage(named: "Radio5"), caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
-        
+        let song1 = Radio(url: "Song1", format: "mp3", jacket: UIImage(named: "Radio1"), artistImage: UIImage(named: "artist1_sqrt"), bio: "", caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
+        let song2 = Radio(url: "Song1", format: "mp3", jacket: UIImage(named: "Radio1"), artistImage: UIImage(named: "artist1_sqrt"), bio: "", caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
+        let song3 = Radio(url: "Song1", format: "mp3", jacket: UIImage(named: "Radio1"), artistImage: UIImage(named: "artist1_sqrt"), bio: "", caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
+        let song4 = Radio(url: "Song1", format: "mp3", jacket: UIImage(named: "Radio1"), artistImage: UIImage(named: "artist1_sqrt"), bio: "", caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
+        let song5 = Radio(url: "Song1", format: "mp3", jacket: UIImage(named: "Radio1"), artistImage: UIImage(named: "artist1_sqrt"), bio: "", caption: "caption 1", username: "@username 1", audioTrackName: "audio 1", likesNumber: "26.4k", commentsNumber: "1.4k", shareNumber: "370")
         
        /* let song6 = Radio(url: "video6", format: "mp4", caption: "caption 6", username: "@username 6", audioTrackName: "audio 6", likesNumber: "380", commentsNumber: "10", shareNumber: "0")
         let song7 = Radio(url: "IMG_3122", format: "MOV", caption: "caption 7", username: "@username 7", audioTrackName: "audio 7", likesNumber: "1.2k", commentsNumber: "158", shareNumber: "12")
