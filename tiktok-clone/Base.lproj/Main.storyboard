@@ -23,10 +23,10 @@
                         <color key="selectedImageTintColor" red="0.93725490196078431" green="0.54509803921568623" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ftP-ce-tJi" kind="relationship" relationship="viewControllers" id="9Gb-zU-vMy"/>
-                        <segue destination="ydc-V1-XK4" kind="relationship" relationship="viewControllers" id="f03-wA-k5o"/>
-                        <segue destination="l6n-X8-0ht" kind="relationship" relationship="viewControllers" id="yBE-vF-dG0"/>
                         <segue destination="aSY-Ym-IwD" kind="relationship" relationship="viewControllers" id="Q9f-Q2-jLc"/>
+                        <segue destination="ftP-ce-tJi" kind="relationship" relationship="viewControllers" id="HbY-oI-7F6"/>
+                        <segue destination="ydc-V1-XK4" kind="relationship" relationship="viewControllers" id="sos-MQ-Awn"/>
+                        <segue destination="l6n-X8-0ht" kind="relationship" relationship="viewControllers" id="Ncb-wm-ypX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYY-5I-8Dl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -38,7 +38,7 @@
             <objects>
                 <viewController id="FaG-dy-QAi" userLabel="Home" customClass="SegmentViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="npd-fh-aLQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bY-Hj-gkN">
@@ -69,7 +69,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="SAa-M9-97C">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="xNc-bF-zhs">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="xNc-bF-zhs">
                             <rect key="frame" x="152.5" y="6" width="109" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
@@ -82,6 +82,7 @@
                             </connections>
                         </segmentedControl>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="RadioView" destination="fbA-dF-6d3" id="7Ma-hI-ZVH"/>
                         <outlet property="ReelView" destination="6bY-Hj-gkN" id="DOB-4u-vOh"/>
@@ -418,11 +419,13 @@
             </objects>
             <point key="canvasLocation" x="-228" y="-1709"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="mni-rc-5wM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aSY-Ym-IwD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="AcO-fn-MUp"/>
+                    <tabBarItem key="tabBarItem" title="" image="music.note.house.fill" catalog="system" selectedImage="music.note.house.fill" id="AcO-fn-MUp">
+                        <color key="badgeColor" red="0.93725490196078431" green="0.54509803921568623" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bq5-xQ-KCs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -442,6 +445,7 @@
         <image name="artist3_sqrt" width="1250" height="1250"/>
         <image name="music" width="25" height="25"/>
         <image name="music.note.house" catalog="system" width="128" height="106"/>
+        <image name="music.note.house.fill" catalog="system" width="128" height="106"/>
         <image name="profile1.png" width="1861" height="1805"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
