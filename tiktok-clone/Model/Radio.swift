@@ -15,6 +15,8 @@ class Radio: NSObject {
     //let jacket_url: String
     //let jacket_format: String
     let jacket: UIImage?
+    let artistImage: UIImage?
+    let bio: String
     let format: String
     let caption : String
     let username: String
@@ -23,12 +25,14 @@ class Radio: NSObject {
     let commentsNumber: String
     let shareNumber: String
  
-    init(url: String, format: String, jacket: UIImage?, caption: String, username: String, audioTrackName: String, likesNumber: String, commentsNumber: String, shareNumber: String){
+    init(url: String, format: String, jacket: UIImage?, artistImage: UIImage?, bio: String, caption: String, username: String, audioTrackName: String, likesNumber: String, commentsNumber: String, shareNumber: String){
         self.url = url
         //self.jacket_url = jacket_url
         self.format = format
         //self.jacket_format = jacket_format
         self.jacket = jacket
+        self.artistImage = artistImage
+        self.bio = bio
         self.caption = caption
         self.username = username
         self.audioTrackName = audioTrackName
