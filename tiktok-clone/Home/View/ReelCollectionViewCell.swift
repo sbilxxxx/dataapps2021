@@ -14,7 +14,6 @@ class ReelCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var videoContainer: UIView!
     
     @IBOutlet weak var labelUsername: UILabel!
-    @IBOutlet weak var labelCaption: UILabel!
     @IBOutlet weak var labelAudioTrack: UILabel!
 
     
@@ -59,7 +58,6 @@ class ReelCollectionViewCell: UICollectionViewCell {
     
     func clean(){
         labelUsername.text = nil
-        labelCaption.text = nil
         labelAudioTrack.text = nil
         
         video = nil
@@ -69,7 +67,6 @@ class ReelCollectionViewCell: UICollectionViewCell {
     private func configureVideoInfo(){
         guard let video = video else { return }
         labelUsername.text = video.username
-        labelCaption.text = video.caption
         labelAudioTrack.text = video.audioTrackName
         
     }
