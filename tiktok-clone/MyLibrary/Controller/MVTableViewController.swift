@@ -48,7 +48,7 @@ class MVTableViewController: UITableViewController {
         // Fetches the appropriate meal for the data source layout.
         let mv = mvs[indexPath.row]
         
-        cell.MVName.text = mv.mvtitle
+        cell.MVTitle.text = mv.mvtitle
         cell.MVThumb.image = mv.thumbnail
         // Configure the cell...
 
@@ -114,6 +114,24 @@ class MVTableViewController: UITableViewController {
     
         let MVView = UIImage(named: "camera")
         
+        /*
+        guard let video1 = MV(mvtitle: "'国分町に愛はなかった'MV", thumbnail: MVView) else {
+            fatalError("Unable to instance Benjamin")
+        }
+        guard let video2 = MV(mvtitle: "ライブ@広瀬通 2020/11/21", thumbnail: MVView) else {
+            fatalError("Unable to instance Benjamin")
+        }
+        guard let video3 = MV(mvtitle: "ライブ@川内 2019/4/31", thumbnail: MVView) else {
+            fatalError("Unable to instance Benjamin")
+        }
+        guard let video4 = MV(mvtitle: "ドライフラワー(copy)/優里", thumbnail: MVView) else {
+            fatalError("Unable to instance Benjamin")
+        }
+        guard let video5 = MV(mvtitle: "'Money Ben'MV", thumbnail: MVView) else {
+            fatalError("Unable to instance Benjamin")
+        }
+        mvs += [video1, video2, video3, video4, video5]
+        */
         if id == 0 {
             guard let video1 = MV(mvtitle: "'国分町に愛はなかった'MV", thumbnail: MVView) else {
                 fatalError("Unable to instance Benjamin")

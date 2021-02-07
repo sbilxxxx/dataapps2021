@@ -46,7 +46,7 @@ class SongTableViewController: UITableViewController {
         let song = songs[indexPath.row]
         
         cell.SongTitle.text = song.songname
-        cell.SongJacket.image = song.jacket
+        cell.SongJacket.image = song.jacket 
         // Configure the cell...
 
         return cell

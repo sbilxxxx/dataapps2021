@@ -11,8 +11,8 @@ import UIKit
 class MVTableViewCell: UITableViewCell {
     
     //MARK: Property
+    @IBOutlet weak var MVTitle: UILabel!
     @IBOutlet weak var MVThumb: UIImageView!
-    @IBOutlet weak var MVName: UILabel!
     
 
     override func awakeFromNib() {

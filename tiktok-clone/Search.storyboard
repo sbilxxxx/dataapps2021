@@ -25,7 +25,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NqE-M0-pfI"/>
-                        <color key="backgroundColor" red="0.76922419580000001" green="0.83209789619999996" blue="0.89530456849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NqE-M0-pfI" firstAttribute="trailing" secondItem="rtt-xv-UjC" secondAttribute="trailing" constant="20" id="QLQ-Vo-JGx"/>
                             <constraint firstItem="rtt-xv-UjC" firstAttribute="top" secondItem="NqE-M0-pfI" secondAttribute="top" constant="40" id="Uun-2b-btm"/>

@@ -19,6 +19,12 @@ class NewsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // セルの高さの見積もり値
+        self.tableView.estimatedRowHeight = 150
+                
+        // セルの制約を基に計算された高さを代入
+        self.tableView.rowHeight = UITableView.automaticDimension
+        
         NewsTableView.dataSource = self
         NewsTableView.delegate = self
         
@@ -145,30 +151,30 @@ class NewsTableViewController: UITableViewController {
     private func loadNews() {
         
         //MARK: Property
-        let BenjaminView = UIImage(named: "Benjamin")
-        let ShuntaroView = UIImage(named: "Shuntaro")
-        let ZaimaView = UIImage(named: "Zaima")
+        let Artist1Sqrt = UIImage(named: "Artist1_Sqrt")
+        let Artist2Sqrt = UIImage(named: "Artist2_Sqrt")
+        let Artist3Sqrt = UIImage(named: "Artist3_Sqrt")
         
         
-        let BenjaminNews1 = "2/11にオンラインライブを行います！僕にとって初めてのオンラインライブですが間違いなく盛り上がるのでぜひ見に来てください！チケットは下のチケット購入蘭から購入してください！皆さんの参加をお待ちしております！グッズも販売するのでそちらもぜひ！"
+        let Artist1News1 = "2/11にオンラインライブを行います！僕にとって初めてのオンラインライブですが間違いなく盛り上がるのでぜひ見に来てください！チケットは下のチケット購入蘭から購入してください！皆さんの参加をお待ちしております！グッズも販売するのでそちらもぜひ！"
         
-        let BenjaminNews2 = "本日2/4に新曲をリリースしました！曲のタイトルは'国分町に愛はなかった'です！この曲には寂しさを埋め合わせるための行為が更なる寂しさを生むというこの時期あるあるな感情をトラックにしました！下の再生ボタンから聞いてみてください！"
+        let Artist1News2 = "本日2/4に新曲をリリースしました！曲のタイトルは'国分町に愛はなかった'です！この曲には寂しさを埋め合わせるための行為が更なる寂しさを生むというこの時期あるあるな感情をトラックにしました！下の再生ボタンから聞いてみてください！"
         
-        let ShuntaroNews1 = "1/16にアーケードでストリートライブやるので皆さん来てください！"
+        let Artist2News1 = "1/16にアーケードでストリートライブやるので皆さん来てください！"
         
-        let ZaimaNews1 = "今度新曲を出します！こうご期待...！"
+        let Artist3News1 = "今度新曲を出します！こうご期待...！"
         
         
-        guard let news1 = News(artist: "Benjamin(深水一聖)", artistview: BenjaminView, title: "ライブのお知らせ！", body: BenjaminNews1) else {
+        guard let news1 = News(artist: "Artist1", artistview: Artist1Sqrt, title: "ライブのお知らせ！", body: Artist1News1) else {
             fatalError("")
         }
-        guard let news2 = News(artist: "鈴木春太郎", artistview: ShuntaroView, title: "告知！", body: ShuntaroNews1) else {
+        guard let news2 = News(artist: "Artist2", artistview: Artist2Sqrt, title: "告知！", body: Artist2News1) else {
             fatalError("")
         }
-        guard let news3 = News(artist: "財満誠", artistview: ZaimaView, title: "新曲出すよ！", body: ZaimaNews1) else {
+        guard let news3 = News(artist: "Artist3", artistview: Artist3Sqrt, title: "新曲出すよ！", body: Artist3News1) else {
             fatalError("")
         }
-        guard let news4 = News(artist: "Benjamin(深水一聖)", artistview: BenjaminView, title: "新曲のお知らせ！", body: BenjaminNews2) else {
+        guard let news4 = News(artist: "Artist1", artistview: Artist1Sqrt, title: "新曲のお知らせ！", body: Artist1News2) else {
             fatalError("")
         }
         
