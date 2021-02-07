@@ -38,8 +38,8 @@
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIB-FZ-w9h">
-                                            <rect key="frame" x="95" y="25" width="299" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <rect key="frame" x="95" y="27.5" width="299" height="25"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="25"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -89,20 +89,20 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOe-27-8ap">
-                                <rect key="frame" x="20" y="366" width="374" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="20" y="366" width="374" height="30"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistRep" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Aq-MW-7G5">
-                                <rect key="frame" x="20" y="336" width="214" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="336" width="214" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FollowedNumber" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aev-cL-IIK">
-                                <rect key="frame" x="20" y="407" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="401" width="374" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -112,45 +112,47 @@
                                     <constraint firstAttribute="width" constant="150" id="Fy9-JT-gyS"/>
                                     <constraint firstAttribute="height" constant="30" id="sBD-Yx-tzY"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                 <state key="normal" title="フォロー済み" image="checkmark.seal.fill" catalog="system">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIi-M8-5n8">
-                                <rect key="frame" x="20" y="443" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="433" width="374" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="250" constant="20.5" id="Wd9-jQ-OwT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="boA-2i-IC0">
-                                <rect key="frame" x="20" y="493" width="374" height="32"/>
-                                <color key="backgroundColor" red="0.78160180140000002" green="0.84584113459999999" blue="0.89530456849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="20" y="477.5" width="374" height="32"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Music Video"/>
                                     <segment title="Song"/>
                                     <segment title="News"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="0.93725490199999995" green="0.5450980392" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="changeTableVew:" destination="wj4-Ix-1Cu" eventType="valueChanged" id="Cyj-WO-ZRh"/>
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3O-hE-t2I">
-                                <rect key="frame" x="20" y="524" width="374" height="289"/>
+                                <rect key="frame" x="20" y="508.5" width="374" height="304.5"/>
                                 <connections>
                                     <segue destination="otd-MS-iJ9" kind="embed" identifier="showMVSegue" id="Xa0-K1-j3l"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6I-c6-anu">
-                                <rect key="frame" x="20" y="524" width="374" height="289"/>
+                                <rect key="frame" x="20" y="508.5" width="374" height="304.5"/>
                                 <connections>
                                     <segue destination="l0k-qF-0gT" kind="embed" identifier="showSongSegue" id="wZ8-JU-vDh"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnr-VI-pTe">
-                                <rect key="frame" x="20" y="524" width="374" height="289"/>
+                                <rect key="frame" x="20" y="508.5" width="374" height="304.5"/>
                                 <connections>
                                     <segue destination="Yyx-ge-hXq" kind="embed" identifier="showPostSegue" id="Ymq-Ct-W3c"/>
                                 </connections>
@@ -215,7 +217,7 @@
             <objects>
                 <tableViewController id="otd-MS-iJ9" customClass="MVTableViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sFE-vM-WY3">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="289"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="304.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -234,7 +236,7 @@
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmb-CT-N7X">
                                             <rect key="frame" x="97.5" y="19" width="276.5" height="22"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -270,7 +272,7 @@
             <objects>
                 <tableViewController id="Yyx-ge-hXq" customClass="PostTableViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LX9-5A-4jq">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="289"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="304.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -282,17 +284,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PostBody" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ay9-Fk-FtG">
-                                            <rect key="frame" x="20" y="32.5" width="354" height="21"/>
+                                            <rect key="frame" x="20" y="32" width="354" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" priority="250" constant="21" id="nC4-7R-YIo"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PostTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPN-q7-Jgv">
-                                            <rect key="frame" x="20" y="5" width="354" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <rect key="frame" x="20" y="5" width="354" height="20"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -331,7 +333,7 @@
             <objects>
                 <tableViewController id="l0k-qF-0gT" customClass="SongTableViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4R4-ja-BY5">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="289"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="304.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -350,7 +352,7 @@
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SongTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bl3-EL-NC5">
                                             <rect key="frame" x="85" y="18" width="289" height="24"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -386,17 +388,17 @@
             <objects>
                 <viewController id="zKe-4J-SOy" customClass="DetailPostViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eGf-Ct-v72">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="289"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="304.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4F-lH-HFj">
-                                <rect key="frame" x="20" y="89" width="334" height="30"/>
+                                <rect key="frame" x="20" y="74" width="334" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGP-VY-DN5">
-                                <rect key="frame" x="40" y="130.5" width="294" height="20.5"/>
+                                <rect key="frame" x="20" y="119" width="314" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="250" constant="20.5" id="Dja-Ai-Peg"/>
                                 </constraints>
@@ -409,9 +411,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Px4-Xl-Dwq" firstAttribute="trailing" secondItem="WGP-VY-DN5" secondAttribute="trailing" constant="40" id="ENe-p8-q6P"/>
-                            <constraint firstItem="WGP-VY-DN5" firstAttribute="leading" secondItem="Px4-Xl-Dwq" secondAttribute="leading" constant="40" id="S3Z-TO-nKu"/>
-                            <constraint firstItem="N4F-lH-HFj" firstAttribute="top" secondItem="Px4-Xl-Dwq" secondAttribute="top" constant="45" id="XDZ-7p-brU"/>
-                            <constraint firstItem="WGP-VY-DN5" firstAttribute="top" secondItem="N4F-lH-HFj" secondAttribute="bottom" constant="11.5" id="dB7-XC-RiI"/>
+                            <constraint firstItem="WGP-VY-DN5" firstAttribute="leading" secondItem="Px4-Xl-Dwq" secondAttribute="leading" constant="20" id="S3Z-TO-nKu"/>
+                            <constraint firstItem="N4F-lH-HFj" firstAttribute="top" secondItem="Px4-Xl-Dwq" secondAttribute="top" constant="30" id="XDZ-7p-brU"/>
+                            <constraint firstItem="WGP-VY-DN5" firstAttribute="top" secondItem="N4F-lH-HFj" secondAttribute="bottom" constant="15" id="dB7-XC-RiI"/>
                             <constraint firstItem="N4F-lH-HFj" firstAttribute="leading" secondItem="Px4-Xl-Dwq" secondAttribute="leading" constant="20" id="eFQ-Us-pMb"/>
                             <constraint firstItem="Px4-Xl-Dwq" firstAttribute="trailing" secondItem="N4F-lH-HFj" secondAttribute="trailing" constant="20" id="pxS-gG-Kj9"/>
                         </constraints>
