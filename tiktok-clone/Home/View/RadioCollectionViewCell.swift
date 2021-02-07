@@ -16,7 +16,6 @@ class RadioCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var jacketImage: UIImageView!
     
     @IBOutlet weak var labelUsername: UILabel!
-    @IBOutlet weak var labelCaption: UILabel!
     @IBOutlet weak var labelAudioTrack: UILabel!
     
    
@@ -62,7 +61,6 @@ class RadioCollectionViewCell: UICollectionViewCell {
     
     func clean(){
         labelUsername.text = nil
-        labelCaption.text = nil
         labelAudioTrack.text = nil
         
 
@@ -75,7 +73,6 @@ class RadioCollectionViewCell: UICollectionViewCell {
         jacketImage.image = radio.jacket
         //jacketImage.addSubview(jacketImage)
         labelUsername.text = radio.username
-        labelCaption.text = radio.caption
         labelAudioTrack.text = radio.audioTrackName
         
     }
