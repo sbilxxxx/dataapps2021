@@ -37,8 +37,9 @@ class ReelViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cvRect = view.frame
-        return CGSize(width: cvRect.width, height: view.safeAreaLayoutGuide.layoutFrame.size.height)
+        //let cvRect = view.frame
+        let cvRect = reelCollectionView.frame
+        return CGSize(width: cvRect.width, height: cvRect.height)
         //return CGSize(width: cvRect.width, height: cvRect.height)
     }
     
@@ -47,7 +48,7 @@ class ReelViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     // Change Status Bar Color
-    
+    /*
     override func viewDidAppear(_ animated: Bool) {
         
      if #available(iOS 13.0, *) {
@@ -93,6 +94,7 @@ class ReelViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBAction func didTapShareButton(_ sender: Any) {
         print("share")
     }
+ */
     
 }
 

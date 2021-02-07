@@ -16,12 +16,9 @@ class ReelCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelUsername: UILabel!
     @IBOutlet weak var labelCaption: UILabel!
     @IBOutlet weak var labelAudioTrack: UILabel!
-    @IBOutlet weak var stackViewButtons: UIStackView!
-    @IBOutlet weak var discoIcon: UIButton!
+
     
-    @IBOutlet weak var labelLikesNumber: UILabel!
-    @IBOutlet weak var labelCommentsNumber: UILabel!
-    @IBOutlet weak var labelShareNumber: UILabel!
+
     
     static let identifier = "cellVideo"
     
@@ -64,10 +61,7 @@ class ReelCollectionViewCell: UICollectionViewCell {
         labelUsername.text = nil
         labelCaption.text = nil
         labelAudioTrack.text = nil
-        labelLikesNumber.text = nil
-        labelCommentsNumber.text = nil
-        labelShareNumber.text = nil
-
+        
         video = nil
         videoContainer.layer.sublayers?.forEach { $0.removeFromSuperlayer() }
     }
@@ -77,10 +71,7 @@ class ReelCollectionViewCell: UICollectionViewCell {
         labelUsername.text = video.username
         labelCaption.text = video.caption
         labelAudioTrack.text = video.audioTrackName
-        labelLikesNumber.text = video.likesNumber
-        labelCommentsNumber.text = video.commentsNumber
-        labelShareNumber.text = video.shareNumber
-        discoIcon.startRotating()
+        
     }
     
     required init?(coder: NSCoder) {
