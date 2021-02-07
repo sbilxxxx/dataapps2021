@@ -12,23 +12,25 @@ class Artist {
     //MARK: Property
     
     var name : String
-    var photo : UIImage?
+    var sqrtphoto : UIImage?
     var place: String
     var followers : String
     var bio : String
+    var mainphoto : UIImage?
     
     //MARK: Initialization
     
-    init?(name: String, photo: UIImage?, place: String, followers: String, bio: String){
+    init?(name: String, sqrtphoto: UIImage?, place: String, followers: String, bio: String, mainphoto: UIImage?){
         
         if name.isEmpty || place.isEmpty || followers.isEmpty || bio.isEmpty {
             return nil
         }
         self.name = name
-        self.photo = photo
+        self.sqrtphoto = sqrtphoto
         self.place = place
         self.followers = followers
         self.bio = bio
+        self.mainphoto = mainphoto
     }
 }
 

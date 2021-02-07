@@ -8,11 +8,18 @@
 
 import UIKit
 
-class ArtistPageViewController: UIViewController {
+class ArtistPageViewController: UIViewController{
+    
+    
     
     //MARK: Property
     
     @IBOutlet weak var ArtistPageView: UIView!
+    
+    @IBOutlet weak var MVContainer: UIView!
+    @IBOutlet weak var SongContainer: UIView!
+    @IBOutlet weak var PostContainer: UIView!
+    
     
     @IBOutlet weak var ArtistView: UIImageView!
     @IBOutlet weak var ArtistName: UILabel!
@@ -20,48 +27,62 @@ class ArtistPageViewController: UIViewController {
     @IBOutlet weak var FollowedNumber: UILabel!
     @IBOutlet weak var ArtistBio: UILabel!
     
+    var containers: Array<UIView> = []
+    
+    
     var eachartist: Artist!
     
     var id: Int!
+    
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ArtistView.image = eachartist.photo
+        
+        ArtistView.image = eachartist.mainphoto
         ArtistName.text = eachartist.name
         ArtistRep.text = eachartist.place
         FollowedNumber.text = eachartist.followers
         ArtistBio.text = eachartist.bio
-
-        // Do any additional setup after loading the view.
+        
+        containers = [MVContainer, SongContainer, PostContainer]
+        ArtistPageView.bringSubviewToFront(MVContainer)
+        
     }
     
-
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showMVSegue" {
             guard let destination = segue.destination as? MVTableViewController else {
-                fatalError("")
+                fatalError("Failed to prepare DetailViewController.")
             }
             destination.id = id
-            }
+        }
         if segue.identifier == "showSongSegue" {
             guard let destination = segue.destination as? SongTableViewController else {
-                fatalError("")
+                fatalError("Failed to prepare DetailViewController.")
             }
             destination.id = id
-            }
-        if segue.identifier == "showNewsSegue" {
+        }
+        if segue.identifier == "showPostSegue" {
             guard let destination = segue.destination as? PostTableViewController else {
-                fatalError("")
+                fatalError("Failed to prepare DetailViewController.")
             }
             destination.id = id
-            }
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        }
     }
 
+    
+    //MARK: Action
+    
+    @IBAction func changeTableVew(_ sender: UISegmentedControl) {
+        let currentTableView = containers[sender.selectedSegmentIndex]
+        ArtistPageView.bringSubviewToFront(currentTableView)
+    }
+    
 }

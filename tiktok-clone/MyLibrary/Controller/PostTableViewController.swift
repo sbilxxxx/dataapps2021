@@ -51,8 +51,8 @@ class PostTableViewController: UITableViewController {
         
         let post = posts[indexPath.row]
         
-        cell.PostDate.text = post.date
-        cell.PostTitle.text = post.title
+        //cell.PostDate.text = post.date
+        cell.PostTitle.text = post.title 
         cell.PostBody.text = post.body
         
 

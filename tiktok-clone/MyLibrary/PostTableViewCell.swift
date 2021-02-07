@@ -10,9 +10,9 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var PostDate: UILabel!
     @IBOutlet weak var PostTitle: UILabel!
     @IBOutlet weak var PostBody: UILabel!
+    
     
 
     override func awakeFromNib() {

@@ -24,6 +24,8 @@ class MyLibraryTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
+        MyLibraryTableView.delegate = self
+        MyLibraryTableView.dataSource = self
         loadArtistData()
     }
 
@@ -52,7 +54,7 @@ class MyLibraryTableViewController: UITableViewController {
         let artist = artists[indexPath.row]
         
         cell.ArtistName.text = artist.name
-        cell.ArtistView.image = artist.photo
+        cell.ArtistView.image = artist.sqrtphoto
         // Configure the cell...
 
         return cell
@@ -134,23 +136,27 @@ class MyLibraryTableViewController: UITableViewController {
     
     private func loadArtistData() {
         
-        let BenjaminView = UIImage(named: "Benjamin")
-        let ShuntaroView = UIImage(named: "Shuntaro")
-        let ZaimaView = UIImage (named: "Zaima")
+        let Artist1Main = UIImage(named: "Artist1_Main")
+        let Artist2Main = UIImage(named: "Artist2_Main")
+        let Artist3Main = UIImage(named: "Artist3_Main")
         
-        let BenjaminBio = "初めまして！僕は京都市を拠点とするトラックメイカーのBenjaminです！主にlofiを作っていて、将来的にはリリックを書いて曲を出すのが目標です！今度オンラインライブをやるんでみてください！"
+        let Artist1Sqrt = UIImage(named: "Artist1_Sqrt")
+        let Artist2Sqrt = UIImage(named: "Artist2_Sqrt")
+        let Artist3Sqrt = UIImage(named: "Artist3_Sqrt")
         
-        let ShuntaroBio = "こんにちは！鈴木春太郎です。シンガーソングライターを目指してます！"
+        let Artist1Bio = "初めまして！僕は京都市を拠点とするトラックメイカーのBenjaminです！主にlofiを作っていて、将来的にはリリックを書いて曲を出すのが目標です！今度オンラインライブをやるんでみてください！"
         
-        let ZaimaBio = "こんにちは、財満ばい。たまに博多弁ば話しよるらしかけど、普段は標準語ばい。よろしくです。"
+        let Artist2Bio = "こんにちは！鈴木春太郎です。シンガーソングライターを目指してます！"
         
-        guard let Benjamin = Artist(name:"Benjamin(深水一聖)", photo: BenjaminView, place: "京都市", followers: "フォロワー数 126人", bio: BenjaminBio)else{
+        let Artist3Bio = "こんにちは、財満ばい。たまに博多弁ば話しよるらしかけど、普段は標準語ばい。よろしくです。"
+        
+        guard let Benjamin = Artist(name:"Artist1", sqrtphoto: Artist1Sqrt, place: "京都市", followers: "フォロワー数 126人", bio: Artist1Bio, mainphoto: Artist1Main)else{
             fatalError("Unable to instance Benjamin")
         }
-        guard let Shuntaro = Artist(name:"鈴木春太郎", photo: ShuntaroView, place: "仙台市", followers: "フォロワー数 94人", bio: ShuntaroBio)else{
+        guard let Shuntaro = Artist(name:"Artist2", sqrtphoto: Artist2Sqrt, place: "仙台市", followers: "フォロワー数 94人", bio: Artist2Bio, mainphoto: Artist2Main)else{
             fatalError("Unable to instance Benjamin")
         }
-        guard let Zaima = Artist(name:"財満誠", photo: ZaimaView, place: "久留米市", followers: "フォロワー数 97人", bio: ZaimaBio)else{
+        guard let Zaima = Artist(name:"Artist3", sqrtphoto: Artist3Sqrt, place: "久留米市", followers: "フォロワー数 97人", bio: Artist3Bio, mainphoto: Artist3Main)else{
             fatalError("Unable to instance Benjamin")
         }
         

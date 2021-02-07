@@ -10,7 +10,6 @@ import UIKit
 
 class DetailPostViewController: UIViewController {
     
-    @IBOutlet weak var PostDate: UILabel!
     @IBOutlet weak var PostTitle: UILabel!
     @IBOutlet weak var PostBody: UILabel!
     
@@ -20,7 +19,6 @@ class DetailPostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        PostDate.text = eachpost.date
         PostTitle.text = eachpost.title
         PostBody.text = eachpost.body
        

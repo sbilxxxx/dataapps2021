@@ -11,8 +11,8 @@ import UIKit
 class SongTableViewCell: UITableViewCell {
     
     //MARK: Property
-    @IBOutlet weak var SongJacket: UIImageView!
     @IBOutlet weak var SongTitle: UILabel!
+    @IBOutlet weak var SongJacket: UIImageView!
     
 
     override func awakeFromNib() {
