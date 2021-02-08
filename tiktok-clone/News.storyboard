@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pzj-bS-fQj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pzj-bS-fQj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -152,6 +152,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJY-f3-8gu">
+                                <rect key="frame" x="289" y="253" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ofe-Xh-oe9"/>
+                                    <constraint firstAttribute="width" constant="105" id="Sft-Mf-PW6"/>
+                                </constraints>
+                                <state key="normal" title="チケット購入"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="rRo-wh-lFC" eventType="touchUpInside" id="xHW-nz-J3S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4ra-2j-6Sc"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,9 +170,11 @@
                             <constraint firstItem="sWc-5G-b8v" firstAttribute="top" secondItem="AWu-WV-3e2" secondAttribute="bottom" constant="11.5" id="51u-i3-j0u"/>
                             <constraint firstItem="Hm7-Vk-1ZK" firstAttribute="leading" secondItem="4ra-2j-6Sc" secondAttribute="leading" constant="20" id="8Ne-uk-JJK"/>
                             <constraint firstItem="AWu-WV-3e2" firstAttribute="leading" secondItem="Hm7-Vk-1ZK" secondAttribute="trailing" constant="15" id="94d-hW-Nan"/>
+                            <constraint firstItem="kJY-f3-8gu" firstAttribute="top" secondItem="w1A-Gd-jJv" secondAttribute="bottom" constant="20" id="G4c-Os-ZEP"/>
                             <constraint firstItem="sWc-5G-b8v" firstAttribute="leading" secondItem="Hm7-Vk-1ZK" secondAttribute="trailing" constant="8" id="JcU-9h-XXF"/>
                             <constraint firstItem="4ra-2j-6Sc" firstAttribute="trailing" secondItem="AWu-WV-3e2" secondAttribute="trailing" constant="20" id="KzD-gJ-r1q"/>
                             <constraint firstItem="4ra-2j-6Sc" firstAttribute="trailing" secondItem="w1A-Gd-jJv" secondAttribute="trailing" constant="20" id="L7b-rH-Wib"/>
+                            <constraint firstItem="4ra-2j-6Sc" firstAttribute="trailing" secondItem="kJY-f3-8gu" secondAttribute="trailing" constant="20" id="Y9R-yN-fI2"/>
                             <constraint firstItem="w1A-Gd-jJv" firstAttribute="leading" secondItem="4ra-2j-6Sc" secondAttribute="leading" constant="20" id="bdO-7d-ViK"/>
                             <constraint firstItem="4ra-2j-6Sc" firstAttribute="trailing" secondItem="sWc-5G-b8v" secondAttribute="trailing" constant="20" id="cA0-42-Txm"/>
                             <constraint firstItem="w1A-Gd-jJv" firstAttribute="top" secondItem="Hm7-Vk-1ZK" secondAttribute="bottom" constant="30" id="hXr-5A-FAe"/>

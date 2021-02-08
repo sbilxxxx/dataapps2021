@@ -17,6 +17,7 @@ class RadioCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var labelUsername: UILabel!
     @IBOutlet weak var labelAudioTrack: UILabel!
+    @IBOutlet weak var labelBio: UILabel!
     
    
     static let identifier = "cellRadio"
@@ -74,6 +75,7 @@ class RadioCollectionViewCell: UICollectionViewCell {
         //jacketImage.addSubview(jacketImage)
         labelUsername.text = radio.username
         labelAudioTrack.text = radio.audioTrackName
+        labelBio.text = radio.bio
         
     }
     

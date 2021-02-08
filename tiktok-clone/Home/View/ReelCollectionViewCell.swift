@@ -15,7 +15,8 @@ class ReelCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var labelUsername: UILabel!
     @IBOutlet weak var labelAudioTrack: UILabel!
-
+    @IBOutlet weak var labelBio: UILabel!
+    
     
 
     
@@ -68,6 +69,7 @@ class ReelCollectionViewCell: UICollectionViewCell {
         guard let video = video else { return }
         labelUsername.text = video.username
         labelAudioTrack.text = video.audioTrackName
+        labelBio.text = video.bio
         
     }
     

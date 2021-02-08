@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ebX-wk-MX4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ebX-wk-MX4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -160,7 +160,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artist biography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBv-PJ-ajd">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artist biography" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBv-PJ-ajd">
                                                     <rect key="frame" x="115" y="387" width="279" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" priority="250" constant="30" id="DVr-AU-LZ5"/>
@@ -191,6 +191,7 @@
                                         <size key="customSize" width="414" height="769"/>
                                         <connections>
                                             <outlet property="labelAudioTrack" destination="MtY-2H-sHK" id="O6v-D0-bmo"/>
+                                            <outlet property="labelBio" destination="HBv-PJ-ajd" id="QYo-j5-a4g"/>
                                             <outlet property="labelUsername" destination="N8v-ha-qds" id="ZW5-nx-zZv"/>
                                             <outlet property="videoContainer" destination="JFr-ya-scY" id="K05-bs-T2G"/>
                                         </connections>
@@ -283,19 +284,19 @@
                                 </segments>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSK-i9-scr">
-                                <rect key="frame" x="20" y="420" width="374" height="251"/>
+                                <rect key="frame" x="20" y="419.5" width="374" height="251.5"/>
                                 <connections>
                                     <segue destination="sMN-Zg-dwX" kind="embed" id="nft-JM-EU3"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTW-4J-IES">
-                                <rect key="frame" x="20" y="420" width="374" height="251"/>
+                                <rect key="frame" x="20" y="419.5" width="374" height="251.5"/>
                                 <connections>
                                     <segue destination="Hv3-qx-MHZ" kind="embed" id="tzu-44-Att"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ch9-qb-cP1">
-                                <rect key="frame" x="20" y="420" width="374" height="251"/>
+                                <rect key="frame" x="20" y="419.5" width="374" height="251.5"/>
                                 <connections>
                                     <segue destination="g0h-tn-BNr" kind="embed" id="RGR-oj-Ora"/>
                                 </connections>
@@ -357,7 +358,7 @@
             <objects>
                 <tableViewController id="sMN-Zg-dwX" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VPd-nd-g9p">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="251"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="251.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -385,7 +386,7 @@
             <objects>
                 <tableViewController id="Hv3-qx-MHZ" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="60J-mA-QDW">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="251"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="251.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -413,7 +414,7 @@
             <objects>
                 <tableViewController id="g0h-tn-BNr" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3jZ-bb-Edg">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="251"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="251.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -542,6 +543,7 @@
                                         <connections>
                                             <outlet property="jacketImage" destination="mFB-Rr-3eZ" id="b3I-FB-ORx"/>
                                             <outlet property="labelAudioTrack" destination="bHK-Tu-J1p" id="2mF-2a-W46"/>
+                                            <outlet property="labelBio" destination="td1-HR-7JM" id="iGh-lb-FK9"/>
                                             <outlet property="labelUsername" destination="Uwp-A3-DnC" id="b5W-2e-RpT"/>
                                             <outlet property="radioContainer" destination="owj-5D-0Gs" id="FwF-d3-sGj"/>
                                             <outletCollection property="gestureRecognizers" destination="39H-Zv-svc" appends="YES" id="bE5-ab-RZr"/>
