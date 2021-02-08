@@ -112,7 +112,11 @@ class MVTableViewController: UITableViewController {
     
     private func loadMVList() {
     
-        let MVView = UIImage(named: "camera")
+        let MVView1 = UIImage(named: "Thumbnail1")
+        let MVView2 = UIImage(named: "Thumbnail2")
+        let MVView3 = UIImage(named: "Thumbnail3")
+        let MVView4 = UIImage(named: "Thumbnail4")
+        let MVView5 = UIImage(named: "Thumbnail5")
         
         /*
         guard let video1 = MV(mvtitle: "'国分町に愛はなかった'MV", thumbnail: MVView) else {
@@ -133,74 +137,74 @@ class MVTableViewController: UITableViewController {
         mvs += [video1, video2, video3, video4, video5]
         */
         if id == 0 {
-            guard let video1 = MV(mvtitle: "'国分町に愛はなかった'MV", thumbnail: MVView) else {
+            guard let video1 = MV(mvtitle: "'国分町に愛はなかった'MV", thumbnail: MVView1) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video2 = MV(mvtitle: "ライブ@広瀬通 2020/11/21", thumbnail: MVView) else {
+            guard let video2 = MV(mvtitle: "ライブ@広瀬通 2020/11/21", thumbnail: MVView2) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video3 = MV(mvtitle: "ライブ@川内 2019/4/31", thumbnail: MVView) else {
+            guard let video3 = MV(mvtitle: "ライブ@川内 2019/4/31", thumbnail: MVView3) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video4 = MV(mvtitle: "ドライフラワー(copy)/優里", thumbnail: MVView) else {
+            guard let video4 = MV(mvtitle: "ドライフラワー(copy)/優里", thumbnail: MVView4) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video5 = MV(mvtitle: "'Money Ben'MV", thumbnail: MVView) else {
+            guard let video5 = MV(mvtitle: "'Money Ben'MV", thumbnail: MVView5) else {
                 fatalError("Unable to instance Benjamin")
             }
             mvs += [video1, video2, video3, video4, video5]
         }
         if id == 1 {
-            guard let video1 = MV(mvtitle: "'国分町に愛はなかった'MV", thumbnail: MVView) else {
+            guard let video1 = MV(mvtitle: "'国分町に愛はなかった'MV", thumbnail: MVView1) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video2 = MV(mvtitle: "ライブ@広瀬通 2020/11/21", thumbnail: MVView) else {
+            guard let video2 = MV(mvtitle: "ライブ@広瀬通 2020/11/21", thumbnail: MVView2) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video3 = MV(mvtitle: "ライブ@川内 2019/4/31", thumbnail: MVView) else {
+            guard let video3 = MV(mvtitle: "ライブ@川内 2019/4/31", thumbnail: MVView3) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video4 = MV(mvtitle: "ドライフラワー(copy)/優里", thumbnail: MVView) else {
+            guard let video4 = MV(mvtitle: "ドライフラワー(copy)/優里", thumbnail: MVView4) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video5 = MV(mvtitle: "'Money Ben'MV", thumbnail: MVView) else {
+            guard let video5 = MV(mvtitle: "'Money Ben'MV", thumbnail: MVView5) else {
                 fatalError("Unable to instance Benjamin")
             }
             mvs += [video1, video2, video3, video4, video5]
         }
         if id == 2 {
-            guard let video1 = MV(mvtitle: "'国分町に愛はなかった'MV", thumbnail: MVView) else {
+            guard let video1 = MV(mvtitle: "'国分町に愛はなかった'MV", thumbnail: MVView1) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video2 = MV(mvtitle: "ライブ@広瀬通 2020/11/21", thumbnail: MVView) else {
+            guard let video2 = MV(mvtitle: "ライブ@広瀬通 2020/11/21", thumbnail: MVView2) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video3 = MV(mvtitle: "ライブ@川内 2019/4/31", thumbnail: MVView) else {
+            guard let video3 = MV(mvtitle: "ライブ@川内 2019/4/31", thumbnail: MVView3) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video4 = MV(mvtitle: "ドライフラワー(copy)/優里", thumbnail: MVView) else {
+            guard let video4 = MV(mvtitle: "ドライフラワー(copy)/優里", thumbnail: MVView4) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video5 = MV(mvtitle: "'Money Ben'MV", thumbnail: MVView) else {
+            guard let video5 = MV(mvtitle: "'Money Ben'MV", thumbnail: MVView5) else {
                 fatalError("Unable to instance Benjamin")
             }
             mvs += [video1, video2, video3, video4, video5]
         }
         
         if id == 4545{
-            guard let video1 = MV(mvtitle: "'国分町に愛はなかった'MV", thumbnail: MVView) else {
+            guard let video1 = MV(mvtitle: "'国分町に愛はなかった'MV", thumbnail: MVView1) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video2 = MV(mvtitle: "ライブ@広瀬通 2020/11/21", thumbnail: MVView) else {
+            guard let video2 = MV(mvtitle: "ライブ@広瀬通 2020/11/21", thumbnail: MVView2) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video3 = MV(mvtitle: "ライブ@川内 2019/4/31", thumbnail: MVView) else {
+            guard let video3 = MV(mvtitle: "ライブ@川内 2019/4/31", thumbnail: MVView3) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video4 = MV(mvtitle: "ドライフラワー(copy)/優里", thumbnail: MVView) else {
+            guard let video4 = MV(mvtitle: "ドライフラワー(copy)/優里", thumbnail: MVView4) else {
                 fatalError("Unable to instance Benjamin")
             }
-            guard let video5 = MV(mvtitle: "'Money Ben'MV", thumbnail: MVView) else {
+            guard let video5 = MV(mvtitle: "'Money Ben'MV", thumbnail: MVView5) else {
                 fatalError("Unable to instance Benjamin")
             }
             mvs += [video1, video2, video3, video4, video5]

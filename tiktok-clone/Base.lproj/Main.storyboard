@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.13725490196078433" green="0.37647058823529411" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" systemColor="labelColor"/>
                         <color key="selectedImageTintColor" red="0.93725490196078431" green="0.54509803921568623" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
@@ -658,7 +658,6 @@
         <!--Post Table View Controller-->
         <scene sceneID="arg-l9-dj1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jOe-N1-rq6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="xCf-oS-eTJ" customClass="PostTableViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5jH-ZI-hM9">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="251.5"/>
@@ -712,6 +711,7 @@
                         <outlet property="PostTableView" destination="5jH-ZI-hM9" id="S5h-KK-kfP"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jOe-N1-rq6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3971" y="-642"/>
         </scene>
@@ -722,6 +722,9 @@
         <image name="music.note.house" catalog="system" width="128" height="106"/>
         <image name="music.note.house.fill" catalog="system" width="128" height="106"/>
         <image name="profile1.png" width="1861" height="1805"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
