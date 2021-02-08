@@ -14,14 +14,9 @@ class ReelViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     @IBOutlet weak var VideoView: UIView!
     @IBOutlet weak var reelCollectionView: UICollectionView!
-    @IBOutlet weak var reelcollectionviewcell: UICollectionViewCell!
-    
-    
     
     let listaComTodosVideos: Array<Video> = VideoDAO().returnAllVideos()
     var listaVideos: Array<Video> = []
-    
-    var givedata: Video!
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +36,6 @@ class ReelViewController: UIViewController, UICollectionViewDataSource, UICollec
         return celulaVideo
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //let cvRect = view.frame
         let cvRect = reelCollectionView.frame
@@ -52,25 +46,6 @@ class ReelViewController: UIViewController, UICollectionViewDataSource, UICollec
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        givedata = listaComTodosVideos[indexPath.item]
-        
-        performSegue(withIdentifier: "viewDetail", sender: nil)
-    }
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "viewDetail"{
-            guard let destination = segue.destination as? ArtistPagefromHomeViewController else{
-                fatalError("")
-            }
-            destination.eachartist = givedata
-        }
-            
-        
-    }
-    
     
     // Change Status Bar Color
     /*
@@ -120,10 +95,6 @@ class ReelViewController: UIViewController, UICollectionViewDataSource, UICollec
         print("share")
     }
  */
-    
-    //MARK: Action
-    
-    
     
 }
 
