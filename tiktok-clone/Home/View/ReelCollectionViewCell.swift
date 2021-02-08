@@ -16,6 +16,7 @@ class ReelCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelUsername: UILabel!
     @IBOutlet weak var labelAudioTrack: UILabel!
     @IBOutlet weak var labelBio: UILabel!
+    @IBOutlet weak var ArtistView: UIImageView!
     
     
 
@@ -70,6 +71,7 @@ class ReelCollectionViewCell: UICollectionViewCell {
         labelUsername.text = video.username
         labelAudioTrack.text = video.audioTrackName
         labelBio.text = video.bio
+        ArtistView.image = video.artistImage
         
     }
     

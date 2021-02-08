@@ -187,6 +187,26 @@ class MVTableViewController: UITableViewController {
             mvs += [video1, video2, video3, video4, video5]
         }
         
+        if id == 4545{
+            guard let video1 = MV(mvtitle: "'国分町に愛はなかった'MV", thumbnail: MVView) else {
+                fatalError("Unable to instance Benjamin")
+            }
+            guard let video2 = MV(mvtitle: "ライブ@広瀬通 2020/11/21", thumbnail: MVView) else {
+                fatalError("Unable to instance Benjamin")
+            }
+            guard let video3 = MV(mvtitle: "ライブ@川内 2019/4/31", thumbnail: MVView) else {
+                fatalError("Unable to instance Benjamin")
+            }
+            guard let video4 = MV(mvtitle: "ドライフラワー(copy)/優里", thumbnail: MVView) else {
+                fatalError("Unable to instance Benjamin")
+            }
+            guard let video5 = MV(mvtitle: "'Money Ben'MV", thumbnail: MVView) else {
+                fatalError("Unable to instance Benjamin")
+            }
+            mvs += [video1, video2, video3, video4, video5]
+        }
+        
+        
         
     }
 

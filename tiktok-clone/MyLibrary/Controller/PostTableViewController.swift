@@ -178,6 +178,22 @@ class PostTableViewController: UITableViewController {
             */
             posts += [News1]
         }
+        if id == 4545{
+            let ZaimaNews1 = "今度新曲を出します！こうご期待...！"
+            
+                    /*
+            let Benjamin_NewSong1 = "本日2/4に新曲をリリースしました！曲のタイトルは'国分町に愛はなかった'です！この曲には寂しさを埋め合わせるための行為が更なる寂しさを生むというこの時期あるあるな感情をトラックにしました！下の再生ボタンから聞いてみてください！"
+            */
+            guard let News1 = Post(date:"2/9/2021 13:15", title: "新曲出すよ！", body:ZaimaNews1)else{
+                fatalError("Unable to instance Benjamin")
+            }
+            /*
+            guard let NewSongNews1 = Post(date:"2/6/2021 18:26", title: "新曲のお知らせ！")else{
+                fatalError("Unable to instance Benjamin")
+            }
+            */
+            posts += [News1]
+        }
 
     }
 
