@@ -20,8 +20,14 @@ class Video: NSObject {
     let likesNumber: String
     let commentsNumber: String
     let shareNumber: String
+    
+    //For ArtistPage
+    let ArtistRep: String
+    let FollowedNumber: String
+    let ArtistView: UIImage?
+    
  
-    init(url: String, format: String, caption: String, username: String, audioTrackName: String, artistImage: UIImage?, bio: String, likesNumber: String, commentsNumber: String, shareNumber: String){
+    init(url: String, format: String, caption: String, username: String, audioTrackName: String, artistImage: UIImage?, bio: String, likesNumber: String, commentsNumber: String, shareNumber: String, ArtistRep: String, FollowedNumber: String, ArtistView: UIImage?){
         self.url = url
         self.format = format
         self.caption = caption
@@ -32,6 +38,10 @@ class Video: NSObject {
         self.likesNumber = likesNumber
         self.commentsNumber = commentsNumber
         self.shareNumber = shareNumber
+        
+        self.ArtistRep = ArtistRep
+        self.FollowedNumber = FollowedNumber
+        self.ArtistView = ArtistView
     }
 
 }

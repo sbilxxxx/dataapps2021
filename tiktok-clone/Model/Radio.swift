@@ -24,8 +24,13 @@ class Radio: NSObject {
     let likesNumber: String
     let commentsNumber: String
     let shareNumber: String
+    
+    //For ArtistPage
+    let ArtistRep: String
+    let FollowedNumber: String
+    let ArtistView: UIImage?
  
-    init(url: String, format: String, jacket: UIImage?, artistImage: UIImage?, bio: String, caption: String, username: String, audioTrackName: String, likesNumber: String, commentsNumber: String, shareNumber: String){
+    init(url: String, format: String, jacket: UIImage?, artistImage: UIImage?, bio: String, caption: String, username: String, audioTrackName: String, likesNumber: String, commentsNumber: String, shareNumber: String, ArtistRep: String, FollowedNumber: String, ArtistView: UIImage?){
         self.url = url
         //self.jacket_url = jacket_url
         self.format = format
@@ -39,6 +44,11 @@ class Radio: NSObject {
         self.likesNumber = likesNumber
         self.commentsNumber = commentsNumber
         self.shareNumber = shareNumber
+        
+        self.ArtistRep = ArtistRep
+        self.FollowedNumber = FollowedNumber
+        self.ArtistView = ArtistView
+        
     }
 
 }
