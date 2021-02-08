@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0344825E25D0DCC6002C45BB /* ArtistPagefromHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0344825D25D0DCC6002C45BB /* ArtistPagefromHomeViewController.swift */; };
+		0344826925D1153D002C45BB /* Radio6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0344826325D1153D002C45BB /* Radio6.jpg */; };
+		0344826A25D1153D002C45BB /* Radio3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0344826425D1153D002C45BB /* Radio3.jpg */; };
+		0344826B25D1153D002C45BB /* Radio4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0344826525D1153D002C45BB /* Radio4.jpg */; };
+		0344826C25D1153D002C45BB /* Radio2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0344826625D1153D002C45BB /* Radio2.jpg */; };
+		0344826D25D1153D002C45BB /* Radio5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0344826725D1153D002C45BB /* Radio5.jpg */; };
+		0344826E25D1153D002C45BB /* Radio1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0344826825D1153D002C45BB /* Radio1.jpg */; };
 		03536CB525CD0B4E00F25B3F /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03536CB425CD0B4E00F25B3F /* Search.storyboard */; };
 		03536CB825CD0B5C00F25B3F /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03536CB725CD0B5C00F25B3F /* News.storyboard */; };
 		03536CBB25CD0B6B00F25B3F /* MyLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03536CBA25CD0B6B00F25B3F /* MyLibrary.storyboard */; };
@@ -35,12 +42,6 @@
 		23C7AF0325D01F50008F6439 /* Reel1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 23C7AEFE25D01F50008F6439 /* Reel1.mp4 */; };
 		23C7AF0425D01F50008F6439 /* Reel5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 23C7AEFF25D01F50008F6439 /* Reel5.mp4 */; };
 		23C7AF0525D01F50008F6439 /* Reel2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 23C7AF0025D01F50008F6439 /* Reel2.mp4 */; };
-		23C7AF0E25D01FBD008F6439 /* Radio1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C7AF0825D01FBD008F6439 /* Radio1.jpg */; };
-		23C7AF0F25D01FBD008F6439 /* Radio2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C7AF0925D01FBD008F6439 /* Radio2.jpg */; };
-		23C7AF1025D01FBD008F6439 /* Radio4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C7AF0A25D01FBD008F6439 /* Radio4.jpg */; };
-		23C7AF1125D01FBD008F6439 /* Radio5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C7AF0B25D01FBD008F6439 /* Radio5.jpg */; };
-		23C7AF1225D01FBD008F6439 /* Radio3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C7AF0C25D01FBD008F6439 /* Radio3.jpg */; };
-		23C7AF1325D01FBD008F6439 /* Radio6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23C7AF0D25D01FBD008F6439 /* Radio6.jpg */; };
 		8017A6A824C5EB0A00F83011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6A724C5EB0A00F83011 /* AppDelegate.swift */; };
 		8017A6AA24C5EB0A00F83011 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6A924C5EB0A00F83011 /* SceneDelegate.swift */; };
 		8017A6AC24C5EB0A00F83011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6AB24C5EB0A00F83011 /* ViewController.swift */; };
@@ -79,6 +80,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0344825D25D0DCC6002C45BB /* ArtistPagefromHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPagefromHomeViewController.swift; sourceTree = "<group>"; };
+		0344826325D1153D002C45BB /* Radio6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Radio6.jpg; sourceTree = "<group>"; };
+		0344826425D1153D002C45BB /* Radio3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Radio3.jpg; sourceTree = "<group>"; };
+		0344826525D1153D002C45BB /* Radio4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Radio4.jpg; sourceTree = "<group>"; };
+		0344826625D1153D002C45BB /* Radio2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Radio2.jpg; sourceTree = "<group>"; };
+		0344826725D1153D002C45BB /* Radio5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Radio5.jpg; sourceTree = "<group>"; };
+		0344826825D1153D002C45BB /* Radio1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Radio1.jpg; sourceTree = "<group>"; };
 		03536CB425CD0B4E00F25B3F /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		03536CB725CD0B5C00F25B3F /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		03536CBA25CD0B6B00F25B3F /* MyLibrary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyLibrary.storyboard; sourceTree = "<group>"; };
@@ -108,7 +116,6 @@
 		2393898525CFCFD10087653E /* logo40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo40.png; sourceTree = "<group>"; };
 		2393898625CFCFD20087653E /* Newdio-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Newdio-logo.png"; sourceTree = "<group>"; };
 		2393898725CFCFD20087653E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		2393898825CFCFD20087653E /* logo180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo180.png; path = ../../../../Downloads/logo180.png; sourceTree = "<group>"; };
 		2393898925CFCFD20087653E /* logo120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo120.png; sourceTree = "<group>"; };
 		2393898A25CFCFD20087653E /* logo58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo58.png; sourceTree = "<group>"; };
 		23C7AEFC25D01F50008F6439 /* Reel4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Reel4.mp4; sourceTree = "<group>"; };
@@ -116,12 +123,6 @@
 		23C7AEFE25D01F50008F6439 /* Reel1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Reel1.mp4; sourceTree = "<group>"; };
 		23C7AEFF25D01F50008F6439 /* Reel5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Reel5.mp4; sourceTree = "<group>"; };
 		23C7AF0025D01F50008F6439 /* Reel2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Reel2.mp4; sourceTree = "<group>"; };
-		23C7AF0825D01FBD008F6439 /* Radio1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Radio1.jpg; path = ../../../../Downloads/Newdio_RadioJacket/Radio1.jpg; sourceTree = "<group>"; };
-		23C7AF0925D01FBD008F6439 /* Radio2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Radio2.jpg; path = ../../../../Downloads/Newdio_RadioJacket/Radio2.jpg; sourceTree = "<group>"; };
-		23C7AF0A25D01FBD008F6439 /* Radio4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Radio4.jpg; path = ../../../../Downloads/Newdio_RadioJacket/Radio4.jpg; sourceTree = "<group>"; };
-		23C7AF0B25D01FBD008F6439 /* Radio5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Radio5.jpg; path = ../../../../Downloads/Newdio_RadioJacket/Radio5.jpg; sourceTree = "<group>"; };
-		23C7AF0C25D01FBD008F6439 /* Radio3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Radio3.jpg; path = ../../../../Downloads/Newdio_RadioJacket/Radio3.jpg; sourceTree = "<group>"; };
-		23C7AF0D25D01FBD008F6439 /* Radio6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Radio6.jpg; path = ../../../../Downloads/Newdio_RadioJacket/Radio6.jpg; sourceTree = "<group>"; };
 		8017A6A424C5EB0A00F83011 /* TikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8017A6A724C5EB0A00F83011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8017A6A924C5EB0A00F83011 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +173,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0344826225D1146C002C45BB /* Jacket */ = {
+			isa = PBXGroup;
+			children = (
+				0344826825D1153D002C45BB /* Radio1.jpg */,
+				0344826625D1153D002C45BB /* Radio2.jpg */,
+				0344826425D1153D002C45BB /* Radio3.jpg */,
+				0344826525D1153D002C45BB /* Radio4.jpg */,
+				0344826725D1153D002C45BB /* Radio5.jpg */,
+				0344826325D1153D002C45BB /* Radio6.jpg */,
+			);
+			name = Jacket;
+			path = ../../../../Downloads/Newdio_RadioJacket;
+			sourceTree = "<group>";
+		};
 		03536CC025CD0BB700F25B3F /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,25 +284,11 @@
 				2393898725CFCFD20087653E /* logo.png */,
 				2393898325CFCFD10087653E /* logo180.png */,
 				80B7F48C24D06B6900E910E4 /* more.png */,
-				2393898825CFCFD20087653E /* logo180.png */,
 				2393898A25CFCFD20087653E /* logo58.png */,
 				2393898425CFCFD10087653E /* logo87.png */,
 				2393898225CFCFD10087653E /* logo60.png */,
 			);
 			path = logo;
-			sourceTree = "<group>";
-		};
-		23C7AF0725D01F5D008F6439 /* Jacket */ = {
-			isa = PBXGroup;
-			children = (
-				23C7AF0825D01FBD008F6439 /* Radio1.jpg */,
-				23C7AF0925D01FBD008F6439 /* Radio2.jpg */,
-				23C7AF0C25D01FBD008F6439 /* Radio3.jpg */,
-				23C7AF0A25D01FBD008F6439 /* Radio4.jpg */,
-				23C7AF0B25D01FBD008F6439 /* Radio5.jpg */,
-				23C7AF0D25D01FBD008F6439 /* Radio6.jpg */,
-			);
-			path = Jacket;
 			sourceTree = "<group>";
 		};
 		8017A69B24C5EB0900F83011 = {
@@ -333,7 +334,7 @@
 		8017A6BB24C6399C00F83011 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				23C7AF0725D01F5D008F6439 /* Jacket */,
+				0344826225D1146C002C45BB /* Jacket */,
 				231EEF9D25D01E0100387D2C /* Reel */,
 				8045BBB324CF2AE20033D4D1 /* Users */,
 				80599B3824C9BF59000DEE61 /* Videos */,
@@ -357,6 +358,7 @@
 				8017A6C324C647A500F83011 /* ReelViewController.swift */,
 				2393896825CFB4410087653E /* SegmentViewController.swift */,
 				2393896C25CFB5860087653E /* RadioViewController.swift */,
+				0344825D25D0DCC6002C45BB /* ArtistPagefromHomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -492,17 +494,17 @@
 				8045BBC324CF2AF40033D4D1 /* user7.png in Resources */,
 				80599B4624C9C12E000DEE61 /* video7.mp4 in Resources */,
 				23C7AF0225D01F50008F6439 /* Reel3.mp4 in Resources */,
+				0344826C25D1153D002C45BB /* Radio2.jpg in Resources */,
+				0344826E25D1153D002C45BB /* Radio1.jpg in Resources */,
 				23C7AF0425D01F50008F6439 /* Reel5.mp4 in Resources */,
-				23C7AF1125D01FBD008F6439 /* Radio5.jpg in Resources */,
 				8045BBC224CF2AF40033D4D1 /* user9.png in Resources */,
 				80599B4224C9C11F000DEE61 /* video5.mp4 in Resources */,
 				03536CB525CD0B4E00F25B3F /* Search.storyboard in Resources */,
 				80599B3C24C9C106000DEE61 /* video2.mp4 in Resources */,
-				23C7AF1325D01FBD008F6439 /* Radio6.jpg in Resources */,
 				8017A6BD24C63A0000F83011 /* tiktok-logo.png in Resources */,
 				80599B4024C9C117000DEE61 /* video4.mp4 in Resources */,
-				23C7AF1225D01FBD008F6439 /* Radio3.jpg in Resources */,
 				03536CB825CD0B5C00F25B3F /* News.storyboard in Resources */,
+				0344826D25D1153D002C45BB /* Radio5.jpg in Resources */,
 				80599B3A24C9BF7A000DEE61 /* video1.mp4 in Resources */,
 				23C7AF0125D01F50008F6439 /* Reel4.mp4 in Resources */,
 				80599B4A24C9C13F000DEE61 /* video9.mp4 in Resources */,
@@ -511,15 +513,15 @@
 				8017A6AF24C5EB0A00F83011 /* Main.storyboard in Resources */,
 				8045BBC724CF2AF40033D4D1 /* user1.png in Resources */,
 				8045BBC624CF2AF40033D4D1 /* user4.png in Resources */,
+				0344826925D1153D002C45BB /* Radio6.jpg in Resources */,
+				0344826B25D1153D002C45BB /* Radio4.jpg in Resources */,
 				8045BBC524CF2AF40033D4D1 /* user3.png in Resources */,
-				23C7AF1025D01FBD008F6439 /* Radio4.jpg in Resources */,
 				80599B4424C9C127000DEE61 /* video6.mp4 in Resources */,
-				23C7AF0F25D01FBD008F6439 /* Radio2.jpg in Resources */,
 				23C7AF0525D01F50008F6439 /* Reel2.mp4 in Resources */,
 				8045BBBE24CF2AF40033D4D1 /* user2.png in Resources */,
 				80599B4C24C9C146000DEE61 /* video10.mp4 in Resources */,
-				23C7AF0E25D01FBD008F6439 /* Radio1.jpg in Resources */,
 				8045BBC024CF2AF40033D4D1 /* user8.png in Resources */,
+				0344826A25D1153D002C45BB /* Radio3.jpg in Resources */,
 				80B7F48B24D065F900E910E4 /* profile1.png in Resources */,
 				03536CBB25CD0B6B00F25B3F /* MyLibrary.storyboard in Resources */,
 				80599B3E24C9C110000DEE61 /* video3.mp4 in Resources */,
@@ -549,6 +551,7 @@
 				03536CF425CD351800F25B3F /* PostTableViewController.swift in Sources */,
 				03536CD425CD1A4300F25B3F /* DetailNewsViewController.swift in Sources */,
 				03536CE225CD26D400F25B3F /* ArtistPageViewController.swift in Sources */,
+				0344825E25D0DCC6002C45BB /* ArtistPagefromHomeViewController.swift in Sources */,
 				03536CE825CD2AA000F25B3F /* MVTableViewController.swift in Sources */,
 				03536CF125CD34A600F25B3F /* PostTableViewCell.swift in Sources */,
 				8045BBC924CF2B650033D4D1 /* ActivityDAO.swift in Sources */,
