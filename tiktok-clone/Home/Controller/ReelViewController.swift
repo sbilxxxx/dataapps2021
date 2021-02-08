@@ -72,6 +72,8 @@ class ReelViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     
+    
+    
     // Change Status Bar Color
     /*
     override func viewDidAppear(_ animated: Bool) {

@@ -95,7 +95,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistRep" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Aq-MW-7G5">
-                                <rect key="frame" x="20" y="336" width="214" height="17"/>
+                                <rect key="frame" x="202" y="336" width="80" height="17"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -107,15 +107,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsU-dS-Q2c">
-                                <rect key="frame" x="244" y="331" width="150" height="30"/>
+                                <rect key="frame" x="292" y="331" width="102" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Fy9-JT-gyS"/>
+                                    <constraint firstAttribute="width" constant="102" id="Fy9-JT-gyS"/>
                                     <constraint firstAttribute="height" constant="30" id="sBD-Yx-tzY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                <state key="normal" title="フォロー済み" image="checkmark.seal.fill" catalog="system">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="フォロー済み">
+                                    <color key="titleColor" systemColor="linkColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeState:" destination="wj4-Ix-1Cu" eventType="touchUpInside" id="b1y-gB-Vpv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIi-M8-5n8">
                                 <rect key="frame" x="20" y="433" width="374" height="15"/>
@@ -128,7 +131,7 @@
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="boA-2i-IC0">
                                 <rect key="frame" x="20" y="477.5" width="374" height="32"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Music Video"/>
                                     <segment title="Song"/>
@@ -157,6 +160,14 @@
                                     <segue destination="Yyx-ge-hXq" kind="embed" identifier="showPostSegue" id="Ymq-Ct-W3c"/>
                                 </connections>
                             </containerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ebm-vz-cJ9">
+                                <rect key="frame" x="170" y="330.5" width="24" height="24"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.5450980392" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="D4V-R8-fmr"/>
+                                    <constraint firstAttribute="width" constant="24" id="WOu-C8-JHd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pzZ-eC-AFC"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -168,6 +179,7 @@
                             <constraint firstItem="pzZ-eC-AFC" firstAttribute="trailing" secondItem="Aev-cL-IIK" secondAttribute="trailing" constant="20" id="4h9-FS-EeH"/>
                             <constraint firstItem="c6I-c6-anu" firstAttribute="leading" secondItem="pzZ-eC-AFC" secondAttribute="leading" constant="20" id="C9F-6m-zmq"/>
                             <constraint firstItem="e3O-hE-t2I" firstAttribute="leading" secondItem="pzZ-eC-AFC" secondAttribute="leading" constant="20" id="CHd-Xf-H56"/>
+                            <constraint firstItem="9Aq-MW-7G5" firstAttribute="leading" secondItem="Ebm-vz-cJ9" secondAttribute="trailing" constant="8" id="GhZ-ZK-Ved"/>
                             <constraint firstItem="cnr-VI-pTe" firstAttribute="leading" secondItem="pzZ-eC-AFC" secondAttribute="leading" constant="20" id="HGw-8Y-EBB"/>
                             <constraint firstItem="pzZ-eC-AFC" firstAttribute="bottom" secondItem="c6I-c6-anu" secondAttribute="bottom" id="L3v-5u-EYV"/>
                             <constraint firstItem="pzZ-eC-AFC" firstAttribute="trailing" secondItem="cnr-VI-pTe" secondAttribute="trailing" constant="20" id="LMc-SU-BPM"/>
@@ -177,7 +189,6 @@
                             <constraint firstItem="pzZ-eC-AFC" firstAttribute="trailing" secondItem="wIi-M8-5n8" secondAttribute="trailing" constant="20" id="UAA-Zq-I2w"/>
                             <constraint firstItem="UsU-dS-Q2c" firstAttribute="top" secondItem="c01-Rv-xtd" secondAttribute="bottom" constant="10" id="UP8-sz-RIa"/>
                             <constraint firstItem="dOe-27-8ap" firstAttribute="top" secondItem="UsU-dS-Q2c" secondAttribute="bottom" constant="5" id="XO3-ej-Bot"/>
-                            <constraint firstItem="UsU-dS-Q2c" firstAttribute="leading" secondItem="9Aq-MW-7G5" secondAttribute="trailing" constant="10" id="XXq-HN-Vev"/>
                             <constraint firstItem="c6I-c6-anu" firstAttribute="top" secondItem="boA-2i-IC0" secondAttribute="bottom" id="Y8R-CQ-Ons"/>
                             <constraint firstItem="boA-2i-IC0" firstAttribute="top" secondItem="wIi-M8-5n8" secondAttribute="bottom" constant="29.5" id="Z2o-Oq-nSI"/>
                             <constraint firstItem="pzZ-eC-AFC" firstAttribute="trailing" secondItem="boA-2i-IC0" secondAttribute="trailing" constant="20" id="Z8X-qD-uPx"/>
@@ -188,8 +199,9 @@
                             <constraint firstItem="9Aq-MW-7G5" firstAttribute="top" secondItem="c01-Rv-xtd" secondAttribute="bottom" constant="15" id="lR4-WJ-uIW"/>
                             <constraint firstItem="pzZ-eC-AFC" firstAttribute="bottom" secondItem="cnr-VI-pTe" secondAttribute="bottom" id="moj-m5-Qmt"/>
                             <constraint firstItem="cnr-VI-pTe" firstAttribute="top" secondItem="boA-2i-IC0" secondAttribute="bottom" id="nte-16-u9E"/>
-                            <constraint firstItem="9Aq-MW-7G5" firstAttribute="leading" secondItem="pzZ-eC-AFC" secondAttribute="leading" constant="20" id="uJF-d7-Mxp"/>
+                            <constraint firstItem="UsU-dS-Q2c" firstAttribute="leading" secondItem="9Aq-MW-7G5" secondAttribute="trailing" constant="10" id="tXh-aR-6f3"/>
                             <constraint firstItem="Aev-cL-IIK" firstAttribute="leading" secondItem="pzZ-eC-AFC" secondAttribute="leading" constant="20" id="v4c-YI-eWT"/>
+                            <constraint firstItem="Ebm-vz-cJ9" firstAttribute="top" secondItem="c01-Rv-xtd" secondAttribute="bottom" constant="10" id="vzL-7g-T5x"/>
                             <constraint firstItem="c01-Rv-xtd" firstAttribute="top" secondItem="pzZ-eC-AFC" secondAttribute="top" id="wm2-rU-WzX"/>
                             <constraint firstItem="c01-Rv-xtd" firstAttribute="leading" secondItem="pzZ-eC-AFC" secondAttribute="leading" id="zIm-HO-AWg"/>
                             <constraint firstItem="Aev-cL-IIK" firstAttribute="top" secondItem="dOe-27-8ap" secondAttribute="bottom" constant="5" id="zRu-Xp-4rv"/>
@@ -206,6 +218,7 @@
                         <outlet property="MVContainer" destination="e3O-hE-t2I" id="G2H-Be-znm"/>
                         <outlet property="PostContainer" destination="cnr-VI-pTe" id="2iw-rb-LqO"/>
                         <outlet property="SongContainer" destination="c6I-c6-anu" id="co2-h9-Vpq"/>
+                        <outlet property="followbutton" destination="UsU-dS-Q2c" id="xo6-ee-e4J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eZF-vN-nuv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -458,9 +471,12 @@
         <image name="Artist1_Main" width="1024" height="682.5"/>
         <image name="Artist1_Sqrt" width="450" height="450"/>
         <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
-        <image name="checkmark.seal.fill" catalog="system" width="128" height="128"/>
+        <image name="mappin" catalog="system" width="105" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

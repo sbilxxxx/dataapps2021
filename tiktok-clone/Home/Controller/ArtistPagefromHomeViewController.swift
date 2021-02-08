@@ -24,6 +24,10 @@ class ArtistPagefromHomeViewController: UIViewController {
     @IBOutlet weak var SongTableView: UIView!
     @IBOutlet weak var PostTable: UIView!
     
+    @IBOutlet weak var followbutton: UIButton!
+    var switchflag: Bool = true
+    
+    
     var containers: Array<UIView> = []
     
     override func viewDidLoad() {
@@ -37,6 +41,13 @@ class ArtistPagefromHomeViewController: UIViewController {
         
         containers = [MVTableView, SongTableView, PostTable]
         ArtistPageFromHome.addSubview(MVTableView)
+        
+        followbutton.layer.cornerRadius = 15
+        self.followbutton.layer.borderWidth = 1
+        followbutton.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+        followbutton.layer.borderColor = UIColor(red: 239/255, green: 139/255, blue: 59/255, alpha: 1).cgColor
+        followbutton.setTitleColor(UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1), for: .normal)
+        followbutton.setTitle("フォロー", for: .normal)
         
 
         // Do any additional setup after loading the view.
@@ -82,5 +93,24 @@ class ArtistPagefromHomeViewController: UIViewController {
         let currentTableView = containers[sender.selectedSegmentIndex]
         ArtistPageFromHome.bringSubviewToFront(currentTableView)
     }
+    
+    @IBAction func changeColor(_ sender: Any) {
+        if switchflag {
+            self.followbutton.layer.cornerRadius = 15
+            self.followbutton.backgroundColor = UIColor(red: 239/255, green: 139/255, blue: 59/255, alpha: 1)
+            self.followbutton.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1), for: .normal)
+            self.followbutton.setTitle("フォロー済", for: .normal)
+            switchflag = false
+        }else{
+            switchflag = true
+            self.followbutton.layer.cornerRadius = 15
+            self.followbutton.layer.borderWidth = 1
+            self.followbutton.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+            self.followbutton.layer.borderColor = UIColor(red: 239/255, green: 139/255, blue: 59/255, alpha: 1).cgColor
+            self.followbutton.setTitleColor(UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1), for: .normal)
+            self.followbutton.setTitle("フォロー", for: .normal)
+        }
+    }
+    
 
 }

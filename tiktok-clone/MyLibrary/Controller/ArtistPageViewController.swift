@@ -27,11 +27,13 @@ class ArtistPageViewController: UIViewController{
     @IBOutlet weak var FollowedNumber: UILabel!
     @IBOutlet weak var ArtistBio: UILabel!
     
+    @IBOutlet weak var followbutton: UIButton!
+    var switchflag: Bool = false
+    
     var containers: Array<UIView> = []
     
     
     var eachartist: Artist!
-    
     var id: Int!
     
     
@@ -50,6 +52,10 @@ class ArtistPageViewController: UIViewController{
         containers = [MVContainer, SongContainer, PostContainer]
         ArtistPageView.bringSubviewToFront(MVContainer)
         
+        self.followbutton.layer.cornerRadius = 15
+        self.followbutton.backgroundColor = UIColor(red: 239/255, green: 139/255, blue: 59/255, alpha: 1)
+        self.followbutton.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1), for: .normal)
+        followbutton.setTitle("フォロー済", for: .normal)
     }
     
     override func didReceiveMemoryWarning() {
@@ -84,5 +90,24 @@ class ArtistPageViewController: UIViewController{
         let currentTableView = containers[sender.selectedSegmentIndex]
         ArtistPageView.bringSubviewToFront(currentTableView)
     }
+    
+    @IBAction func changeState(_ sender: Any) {
+        if switchflag {
+            self.followbutton.layer.cornerRadius = 15
+            self.followbutton.backgroundColor = UIColor(red: 239/255, green: 139/255, blue: 59/255, alpha: 1)
+            self.followbutton.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1), for: .normal)
+            self.followbutton.setTitle("フォロー済", for: .normal)
+            switchflag = false
+        }else{
+            switchflag = true
+            self.followbutton.layer.cornerRadius = 15
+            self.followbutton.layer.borderWidth = 1
+            self.followbutton.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+            self.followbutton.layer.borderColor = UIColor(red: 239/255, green: 139/255, blue: 59/255, alpha: 1).cgColor
+            self.followbutton.setTitleColor(UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1), for: .normal)
+            self.followbutton.setTitle("フォロー", for: .normal)
+        }
+    }
+    
     
 }
