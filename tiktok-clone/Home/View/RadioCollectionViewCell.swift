@@ -45,7 +45,7 @@ class RadioCollectionViewCell: UICollectionViewCell {
     
     private func configureRadio(){
         
-        guard let radio = radio else { return }
+        //guard let radio = radio else { return }
         //guard let path = Bundle.main.path(forResource: radio.jacket_url, ofType: radio.jacket_format) else { return }
         //print(path)
         //jacketImage.image = UIImage(contentsOfFile: String(path))

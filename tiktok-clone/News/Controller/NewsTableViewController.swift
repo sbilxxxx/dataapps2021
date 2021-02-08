@@ -165,16 +165,16 @@ class NewsTableViewController: UITableViewController {
         let Artist3News1 = "今度新曲を出します！こうご期待...！"
         
         
-        guard let news1 = News(artist: "Artist1", artistview: Artist1Sqrt, title: "ライブのお知らせ！", body: Artist1News1) else {
+        guard let news1 = News(artist: "ギャラガー", artistview: Artist1Sqrt, title: "ライブのお知らせ！", body: Artist1News1) else {
             fatalError("")
         }
-        guard let news2 = News(artist: "Artist2", artistview: Artist2Sqrt, title: "告知！", body: Artist2News1) else {
+        guard let news2 = News(artist: "フリーディー", artistview: Artist2Sqrt, title: "告知！", body: Artist2News1) else {
             fatalError("")
         }
-        guard let news3 = News(artist: "Artist3", artistview: Artist3Sqrt, title: "新曲出すよ！", body: Artist3News1) else {
+        guard let news3 = News(artist: "⭐︎Taisei⭐︎", artistview: Artist3Sqrt, title: "新曲出すよ！", body: Artist3News1) else {
             fatalError("")
         }
-        guard let news4 = News(artist: "Artist1", artistview: Artist1Sqrt, title: "新曲のお知らせ！", body: Artist1News2) else {
+        guard let news4 = News(artist: "ギャラガー", artistview: Artist1Sqrt, title: "新曲のお知らせ！", body: Artist1News2) else {
             fatalError("")
         }
         

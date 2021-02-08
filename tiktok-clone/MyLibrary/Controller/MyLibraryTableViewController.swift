@@ -144,19 +144,19 @@ class MyLibraryTableViewController: UITableViewController {
         let Artist2Sqrt = UIImage(named: "Artist2_Sqrt")
         let Artist3Sqrt = UIImage(named: "Artist3_Sqrt")
         
-        let Artist1Bio = "初めまして！僕は京都市を拠点とするトラックメイカーのBenjaminです！主にlofiを作っていて、将来的にはリリックを書いて曲を出すのが目標です！今度オンラインライブをやるんでみてください！"
+        let Artist1Bio = "初めまして！僕は京都市を拠点とするトラックメイカーのフレディーです！主にlofiを作っていて、将来的にはリリックを書いて曲を出すのが目標です！今度オンラインライブをやるんでみてください！"
         
-        let Artist2Bio = "こんにちは！鈴木春太郎です。シンガーソングライターを目指してます！"
+        let Artist2Bio = "こんにちは！ブライアンです。シンガーソングライターを目指してます！"
         
-        let Artist3Bio = "こんにちは、財満ばい。たまに博多弁ば話しよるらしかけど、普段は標準語ばい。よろしくです。"
+        let Artist3Bio = "こんにちは、ロジャーばい。たまに博多弁ば話しよるらしかけど、普段は標準語ばい。よろしくです。"
         
-        guard let Benjamin = Artist(name:"Artist1", sqrtphoto: Artist1Sqrt, place: "京都市", followers: "フォロワー数 126人", bio: Artist1Bio, mainphoto: Artist1Main)else{
+        guard let Benjamin = Artist(name:"フレディー", sqrtphoto: Artist1Sqrt, place: "京都市", followers: "フォロワー数 126人", bio: Artist1Bio, mainphoto: Artist1Main)else{
             fatalError("Unable to instance Benjamin")
         }
-        guard let Shuntaro = Artist(name:"Artist2", sqrtphoto: Artist2Sqrt, place: "仙台市", followers: "フォロワー数 94人", bio: Artist2Bio, mainphoto: Artist2Main)else{
+        guard let Shuntaro = Artist(name:"ブライアン", sqrtphoto: Artist2Sqrt, place: "仙台市", followers: "フォロワー数 94人", bio: Artist2Bio, mainphoto: Artist2Main)else{
             fatalError("Unable to instance Benjamin")
         }
-        guard let Zaima = Artist(name:"Artist3", sqrtphoto: Artist3Sqrt, place: "久留米市", followers: "フォロワー数 97人", bio: Artist3Bio, mainphoto: Artist3Main)else{
+        guard let Zaima = Artist(name:"ロジャー", sqrtphoto: Artist3Sqrt, place: "久留米市", followers: "フォロワー数 97人", bio: Artist3Bio, mainphoto: Artist3Main)else{
             fatalError("Unable to instance Benjamin")
         }
         
