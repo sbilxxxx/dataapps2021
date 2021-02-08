@@ -170,6 +170,26 @@ class SongTableViewController: UITableViewController {
             
             songs += [song1, song2, song3, song4, song5]
         }
+        if id == 4545{
+            guard let song1 = Song(songname: "国分町に愛はなかった", jacket: songview)else{
+                fatalError("Unable to instance Benjamin")
+            }
+            guard let song2 = Song(songname: "歯磨き", jacket: songview)else{
+                fatalError("Unable to instance Benjamin")
+            }
+            guard let song3 = Song(songname: "欅×love", jacket: songview)else{
+                fatalError("Unable to instance Benjamin")
+            }
+            guard let song4 = Song(songname: "song4", jacket: songview)else{
+                fatalError("Unable to instance Benjamin")
+            }
+            guard let song5 = Song(songname: "Money Ben", jacket: songview)else{
+                fatalError("Unable to instance Benjamin")
+            }
+            
+            songs += [song1, song2, song3, song4, song5]
+        }
+        
     }
 
 
