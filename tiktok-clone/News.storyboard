@@ -163,10 +163,18 @@
                                     <action selector="tapButton:" destination="rRo-wh-lFC" eventType="touchUpInside" id="xHW-nz-J3S"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="フライヤー.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Zum-Or-Z08">
+                                <rect key="frame" x="55" y="319" width="304" height="365"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="365" id="MJq-A9-esy"/>
+                                    <constraint firstAttribute="width" constant="304" id="dqI-jQ-UyY"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4ra-2j-6Sc"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Zum-Or-Z08" firstAttribute="top" secondItem="kJY-f3-8gu" secondAttribute="bottom" constant="36" id="4ok-Tk-XYc"/>
                             <constraint firstItem="sWc-5G-b8v" firstAttribute="top" secondItem="AWu-WV-3e2" secondAttribute="bottom" constant="11.5" id="51u-i3-j0u"/>
                             <constraint firstItem="Hm7-Vk-1ZK" firstAttribute="leading" secondItem="4ra-2j-6Sc" secondAttribute="leading" constant="20" id="8Ne-uk-JJK"/>
                             <constraint firstItem="AWu-WV-3e2" firstAttribute="leading" secondItem="Hm7-Vk-1ZK" secondAttribute="trailing" constant="15" id="94d-hW-Nan"/>
@@ -174,6 +182,7 @@
                             <constraint firstItem="sWc-5G-b8v" firstAttribute="leading" secondItem="Hm7-Vk-1ZK" secondAttribute="trailing" constant="8" id="JcU-9h-XXF"/>
                             <constraint firstItem="4ra-2j-6Sc" firstAttribute="trailing" secondItem="AWu-WV-3e2" secondAttribute="trailing" constant="20" id="KzD-gJ-r1q"/>
                             <constraint firstItem="4ra-2j-6Sc" firstAttribute="trailing" secondItem="w1A-Gd-jJv" secondAttribute="trailing" constant="20" id="L7b-rH-Wib"/>
+                            <constraint firstItem="4ra-2j-6Sc" firstAttribute="trailing" secondItem="Zum-Or-Z08" secondAttribute="trailing" constant="55" id="ONR-eM-WRe"/>
                             <constraint firstItem="4ra-2j-6Sc" firstAttribute="trailing" secondItem="kJY-f3-8gu" secondAttribute="trailing" constant="20" id="Y9R-yN-fI2"/>
                             <constraint firstItem="w1A-Gd-jJv" firstAttribute="leading" secondItem="4ra-2j-6Sc" secondAttribute="leading" constant="20" id="bdO-7d-ViK"/>
                             <constraint firstItem="4ra-2j-6Sc" firstAttribute="trailing" secondItem="sWc-5G-b8v" secondAttribute="trailing" constant="20" id="cA0-42-Txm"/>
@@ -219,6 +228,7 @@
     <resources>
         <image name="artist1_sqrt" width="450" height="450"/>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
+        <image name="フライヤー.jpg" width="176.29714965820312" height="246.85714721679688"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
