@@ -130,7 +130,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="boA-2i-IC0">
-                                <rect key="frame" x="20" y="477.5" width="374" height="32"/>
+                                <rect key="frame" x="20" y="479" width="374" height="32"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Music Video"/>
@@ -143,19 +143,19 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3O-hE-t2I">
-                                <rect key="frame" x="20" y="508.5" width="374" height="304.5"/>
+                                <rect key="frame" x="20" y="510" width="374" height="303"/>
                                 <connections>
                                     <segue destination="otd-MS-iJ9" kind="embed" identifier="showMVSegue" id="Xa0-K1-j3l"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6I-c6-anu">
-                                <rect key="frame" x="20" y="508.5" width="374" height="304.5"/>
+                                <rect key="frame" x="20" y="510" width="374" height="303"/>
                                 <connections>
                                     <segue destination="l0k-qF-0gT" kind="embed" identifier="showSongSegue" id="wZ8-JU-vDh"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnr-VI-pTe">
-                                <rect key="frame" x="20" y="508.5" width="374" height="304.5"/>
+                                <rect key="frame" x="20" y="510" width="374" height="303"/>
                                 <connections>
                                     <segue destination="Yyx-ge-hXq" kind="embed" identifier="showPostSegue" id="Ymq-Ct-W3c"/>
                                 </connections>
@@ -168,6 +168,14 @@
                                     <constraint firstAttribute="width" constant="24" id="WOu-C8-JHd"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCG-Xu-2ZL">
+                                <rect key="frame" x="329" y="453" width="65" height="25"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                <state key="normal" title="もっと見る"/>
+                                <connections>
+                                    <segue destination="tJw-AZ-Rdc" kind="show" identifier="showBioDetail" id="1c3-Ym-XYP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pzZ-eC-AFC"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -177,6 +185,7 @@
                             <constraint firstItem="pzZ-eC-AFC" firstAttribute="trailing" secondItem="e3O-hE-t2I" secondAttribute="trailing" constant="20" id="3nD-e3-QAL"/>
                             <constraint firstItem="c01-Rv-xtd" firstAttribute="trailing" secondItem="pzZ-eC-AFC" secondAttribute="trailing" id="4IA-4b-Qkj"/>
                             <constraint firstItem="pzZ-eC-AFC" firstAttribute="trailing" secondItem="Aev-cL-IIK" secondAttribute="trailing" constant="20" id="4h9-FS-EeH"/>
+                            <constraint firstItem="dCG-Xu-2ZL" firstAttribute="top" secondItem="wIi-M8-5n8" secondAttribute="bottom" constant="5" id="7ib-a7-N22"/>
                             <constraint firstItem="c6I-c6-anu" firstAttribute="leading" secondItem="pzZ-eC-AFC" secondAttribute="leading" constant="20" id="C9F-6m-zmq"/>
                             <constraint firstItem="e3O-hE-t2I" firstAttribute="leading" secondItem="pzZ-eC-AFC" secondAttribute="leading" constant="20" id="CHd-Xf-H56"/>
                             <constraint firstItem="9Aq-MW-7G5" firstAttribute="leading" secondItem="Ebm-vz-cJ9" secondAttribute="trailing" constant="8" id="GhZ-ZK-Ved"/>
@@ -190,9 +199,10 @@
                             <constraint firstItem="UsU-dS-Q2c" firstAttribute="top" secondItem="c01-Rv-xtd" secondAttribute="bottom" constant="10" id="UP8-sz-RIa"/>
                             <constraint firstItem="dOe-27-8ap" firstAttribute="top" secondItem="UsU-dS-Q2c" secondAttribute="bottom" constant="5" id="XO3-ej-Bot"/>
                             <constraint firstItem="c6I-c6-anu" firstAttribute="top" secondItem="boA-2i-IC0" secondAttribute="bottom" id="Y8R-CQ-Ons"/>
-                            <constraint firstItem="boA-2i-IC0" firstAttribute="top" secondItem="wIi-M8-5n8" secondAttribute="bottom" constant="29.5" id="Z2o-Oq-nSI"/>
+                            <constraint firstItem="boA-2i-IC0" firstAttribute="top" secondItem="dCG-Xu-2ZL" secondAttribute="bottom" constant="1" id="Z2o-Oq-nSI"/>
                             <constraint firstItem="pzZ-eC-AFC" firstAttribute="trailing" secondItem="boA-2i-IC0" secondAttribute="trailing" constant="20" id="Z8X-qD-uPx"/>
                             <constraint firstItem="pzZ-eC-AFC" firstAttribute="bottom" secondItem="e3O-hE-t2I" secondAttribute="bottom" id="bs0-eP-uwL"/>
+                            <constraint firstItem="pzZ-eC-AFC" firstAttribute="trailing" secondItem="dCG-Xu-2ZL" secondAttribute="trailing" constant="20" id="czl-b1-QJB"/>
                             <constraint firstItem="wIi-M8-5n8" firstAttribute="leading" secondItem="pzZ-eC-AFC" secondAttribute="leading" constant="20" id="d58-nV-h1Y"/>
                             <constraint firstItem="pzZ-eC-AFC" firstAttribute="trailing" secondItem="dOe-27-8ap" secondAttribute="trailing" constant="20" id="elu-Db-ITF"/>
                             <constraint firstItem="boA-2i-IC0" firstAttribute="leading" secondItem="pzZ-eC-AFC" secondAttribute="leading" constant="20" id="g8s-Xc-hJx"/>
@@ -230,7 +240,7 @@
             <objects>
                 <tableViewController id="otd-MS-iJ9" customClass="MVTableViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sFE-vM-WY3">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="304.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="303"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -280,12 +290,47 @@
             </objects>
             <point key="canvasLocation" x="2744.9275362318845" y="-395.42410714285711"/>
         </scene>
+        <!--Bio Detail View Controller-->
+        <scene sceneID="2ne-zc-3fS">
+            <objects>
+                <viewController id="tJw-AZ-Rdc" customClass="BioDetailViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxL-Aa-gXC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da6-PK-Ie1">
+                                <rect key="frame" x="20" y="138" width="374" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="21" id="NAc-nz-gCp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zkV-jF-VDf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zkV-jF-VDf" firstAttribute="trailing" secondItem="da6-PK-Ie1" secondAttribute="trailing" constant="20" id="Lcl-3M-58f"/>
+                            <constraint firstItem="da6-PK-Ie1" firstAttribute="leading" secondItem="zkV-jF-VDf" secondAttribute="leading" constant="20" id="i3J-8q-9wu"/>
+                            <constraint firstItem="da6-PK-Ie1" firstAttribute="top" secondItem="zkV-jF-VDf" secondAttribute="top" constant="50" id="uc3-n8-j5I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AqY-MD-mpU"/>
+                    <connections>
+                        <outlet property="bio" destination="da6-PK-Ie1" id="cyz-XO-mgc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fx3-aT-oZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1966.6666666666667" y="635.49107142857144"/>
+        </scene>
         <!--Post Table View Controller-->
         <scene sceneID="Oiz-L5-RCz">
             <objects>
                 <tableViewController id="Yyx-ge-hXq" customClass="PostTableViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LX9-5A-4jq">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="304.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="303"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -346,7 +391,7 @@
             <objects>
                 <tableViewController id="l0k-qF-0gT" customClass="SongTableViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4R4-ja-BY5">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="304.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="303"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -401,7 +446,7 @@
             <objects>
                 <viewController id="zKe-4J-SOy" customClass="DetailPostViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eGf-Ct-v72">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="304.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="303"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4F-lH-HFj">

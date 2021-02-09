@@ -81,6 +81,12 @@ class ArtistPageViewController: UIViewController{
             }
             destination.id = id
         }
+        if segue.identifier == "showBioDetail" {
+            guard let destination = segue.destination as? BioDetailViewController else {
+                fatalError("")
+            }
+            destination.receivebio = ArtistBio.text
+        }
     }
 
     

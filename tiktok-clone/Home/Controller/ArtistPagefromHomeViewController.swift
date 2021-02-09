@@ -84,6 +84,12 @@ class ArtistPagefromHomeViewController: UIViewController {
             }
             destination.id = 4545
         }
+        if segue.identifier == "showBioDetail" {
+            guard let destination = segue.destination as? BioDetailforHomeViewController else {
+                fatalError("")
+            }
+            destination.bioreceiver = ArtistBio.text
+        }
     }
     
     

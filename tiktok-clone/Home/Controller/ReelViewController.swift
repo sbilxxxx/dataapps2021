@@ -9,13 +9,12 @@
 import UIKit
 
 
-class ReelViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+class ReelViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIGestureRecognizerDelegate{
 
     
     @IBOutlet weak var VideoView: UIView!
     @IBOutlet weak var reelCollectionView: UICollectionView!
     @IBOutlet weak var reelcollectionviewcell: UICollectionViewCell!
-    
     
     
     let listaComTodosVideos: Array<Video> = VideoDAO().returnAllVideos()
@@ -53,6 +52,27 @@ class ReelViewController: UIViewController, UICollectionViewDataSource, UICollec
         return 0
     }
     
+    /*
+    private func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: NSIndexPath) -> UICollectionViewCell{
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "videoCell", for: indexPath as IndexPath) as! ReelCollectionViewCell
+        
+        if cell.ArtistView.gestureRecognizers?.count == 0 {
+            let tapGesture = UITapGestureRecognizer(target: self, action: Selector(("tapView:")))
+            cell.ArtistView.addGestureRecognizer(tapGesture)
+            cell.ArtistView.isUserInteractionEnabled = true
+        }
+        return cell
+    }
+    
+    func tapView(gestureRecognizer: UITapGestureRecognizer){
+        let tappedLocation = gestureRecognizer.location(in: reelCollectionView)
+        let tappedIndexPath = reelCollectionView.indexPathForItem(at: tappedLocation)
+        let tappedItem = tappedIndexPath?.item
+        print(tappedItem!)
+        performSegue(withIdentifier: "videoCell", sender: nil)
+    }
+    
+    */
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         givedata = listaComTodosVideos[indexPath.item]
         
@@ -64,16 +84,11 @@ class ReelViewController: UIViewController, UICollectionViewDataSource, UICollec
         if segue.identifier == "viewDetail"{
             guard let destination = segue.destination as? ArtistPagefromHomeViewController else{
                 fatalError("")
+                
             }
             destination.eachartist = givedata
+            }
         }
-            
-        
-    }
-    
-    
-    
-    
     // Change Status Bar Color
     /*
     override func viewDidAppear(_ animated: Bool) {
