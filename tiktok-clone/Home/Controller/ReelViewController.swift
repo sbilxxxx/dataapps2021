@@ -27,6 +27,8 @@ class ReelViewController: UIViewController, UICollectionViewDataSource, UICollec
         reelCollectionView.dataSource = self
         reelCollectionView.delegate = self
         listaVideos = listaComTodosVideos
+        
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -140,6 +142,8 @@ class ReelViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     //MARK: Action
     
+    @IBAction func Segment(_ sender: Any) {
+    }
     
     
 }
