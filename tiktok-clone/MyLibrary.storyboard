@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cYA-Vb-Q4s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cYA-Vb-Q4s">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,6 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.96862745100000003" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArtistListCell" id="TZ2-fN-cll" customClass="MyLibraryTableViewCell" customModule="TikTok" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
@@ -53,6 +54,7 @@
                                         <constraint firstItem="gfc-XD-IO3" firstAttribute="top" secondItem="rSL-qE-FYw" secondAttribute="top" constant="10" id="ngO-Zc-ZY7"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.96862745100000003" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="ArtistName" destination="NIB-FZ-w9h" id="G5q-Fw-08I"/>
                                     <outlet property="ArtistView" destination="gfc-XD-IO3" id="O7E-dN-4DS"/>
@@ -178,7 +180,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pzZ-eC-AFC"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="e3O-hE-t2I" firstAttribute="top" secondItem="boA-2i-IC0" secondAttribute="bottom" id="1XV-vE-pCZ"/>
                             <constraint firstItem="pzZ-eC-AFC" firstAttribute="trailing" secondItem="c6I-c6-anu" secondAttribute="trailing" constant="20" id="2G6-Vl-oV6"/>
@@ -274,6 +276,7 @@
                                         <constraint firstAttribute="bottom" secondItem="Jmb-CT-N7X" secondAttribute="bottom" constant="19" id="zr1-As-fgB"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.96862745100000003" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="MVThumb" destination="9zP-KV-83N" id="Zoh-eK-wVp"/>
                                     <outlet property="MVTitle" destination="Jmb-CT-N7X" id="Jwq-Lo-mWG"/>
@@ -309,7 +312,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zkV-jF-VDf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zkV-jF-VDf" firstAttribute="trailing" secondItem="da6-PK-Ie1" secondAttribute="trailing" constant="20" id="Lcl-3M-58f"/>
                             <constraint firstItem="da6-PK-Ie1" firstAttribute="leading" secondItem="zkV-jF-VDf" secondAttribute="leading" constant="20" id="i3J-8q-9wu"/>
@@ -366,6 +369,7 @@
                                         <constraint firstItem="EPN-q7-Jgv" firstAttribute="top" secondItem="aSZ-5x-3OM" secondAttribute="top" constant="5" id="xbN-bn-rGc"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.96862745100000003" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="PostBody" destination="ay9-Fk-FtG" id="YJh-K0-3uh"/>
                                     <outlet property="PostTitle" destination="EPN-q7-Jgv" id="gHm-f7-6VR"/>
@@ -425,6 +429,7 @@
                                         <constraint firstItem="2Zx-rA-t9Z" firstAttribute="leading" secondItem="4L8-nZ-YOm" secondAttribute="leading" constant="20" id="y5a-Mq-rVr"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.96862745100000003" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="SongJacket" destination="2Zx-rA-t9Z" id="gcT-F6-wem"/>
                                     <outlet property="SongTitle" destination="Bl3-EL-NC5" id="w0n-tF-Zgl"/>
@@ -466,7 +471,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Px4-Xl-Dwq"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Px4-Xl-Dwq" firstAttribute="trailing" secondItem="WGP-VY-DN5" secondAttribute="trailing" constant="40" id="ENe-p8-q6P"/>
                             <constraint firstItem="WGP-VY-DN5" firstAttribute="leading" secondItem="Px4-Xl-Dwq" secondAttribute="leading" constant="20" id="S3Z-TO-nKu"/>
@@ -497,9 +502,9 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" systemColor="labelColor"/>
-                        <color key="barTintColor" red="0.13725490200000001" green="0.37647058820000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="0.96862745098039216" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>

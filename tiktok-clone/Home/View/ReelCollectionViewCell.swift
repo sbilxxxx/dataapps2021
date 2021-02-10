@@ -19,8 +19,14 @@ class ReelCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var ArtistView: UIImageView!
     
     
-
+    @IBOutlet weak var pro1View: UIImageView!
+    @IBOutlet weak var pro2View: UIImageView!
     
+    @IBOutlet weak var comment1: UILabel!
+    @IBOutlet weak var comment2: UILabel!
+    
+    
+
     static let identifier = "cellVideo"
     
     // MARK: Subviews
@@ -72,6 +78,10 @@ class ReelCollectionViewCell: UICollectionViewCell {
         labelAudioTrack.text = video.audioTrackName
         labelBio.text = video.bio
         ArtistView.image = video.artistImage
+        pro1View.image = video.pro_1
+        pro2View.image = video.pro_2
+        comment1.text = video.comment_1
+        comment2.text = video.comment_2
         
     }
     
