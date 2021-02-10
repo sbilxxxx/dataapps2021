@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search View Controller-->
+        <!--検索-->
         <scene sceneID="BrO-ao-Pj5">
             <objects>
                 <viewController id="9Vd-PJ-BQ5" customClass="SearchViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <constraint firstItem="rtt-xv-UjC" firstAttribute="leading" secondItem="NqE-M0-pfI" secondAttribute="leading" constant="20" id="cfx-7e-dfz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="eqV-SX-ax1"/>
+                    <navigationItem key="navigationItem" title="検索" id="eqV-SX-ax1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="searchTextField" destination="rtt-xv-UjC" id="VCJ-fT-6l4"/>
@@ -42,16 +42,20 @@
             </objects>
             <point key="canvasLocation" x="1284.0579710144928" y="120.53571428571428"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--検索-->
         <scene sceneID="I5T-l9-kSI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zVm-5R-GZM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="search" id="6pa-nE-PYJ"/>
+                    <tabBarItem key="tabBarItem" title="検索" image="search" id="6pa-nE-PYJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="v2p-zt-qed">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.13725490200000001" green="0.37647058820000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.37647058820000001" blue="0.67450980390000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.13725490200000001" green="0.37647058820000001" blue="0.67450980390000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

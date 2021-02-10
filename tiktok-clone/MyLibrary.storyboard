@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Library Table View Controller-->
+        <!--フォローアーティスト-->
         <scene sceneID="qdM-Vb-2Hs">
             <objects>
                 <tableViewController id="fgx-rJ-toU" customClass="MyLibraryTableViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,7 +65,7 @@
                             <outlet property="delegate" destination="fgx-rJ-toU" id="izS-Ak-CaL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ljT-ag-9Q6"/>
+                    <navigationItem key="navigationItem" title="フォローアーティスト" id="ljT-ag-9Q6"/>
                     <connections>
                         <outlet property="MyLibraryTableView" destination="Nf8-wz-IP9" id="63b-TM-NMe"/>
                     </connections>
@@ -486,11 +486,11 @@
             </objects>
             <point key="canvasLocation" x="3496" y="209"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--ライブラリ-->
         <scene sceneID="Hgl-hV-F2j">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cYA-Vb-Q4s" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="books.vertical.fill" catalog="system" id="Qbx-24-F9r"/>
+                    <tabBarItem key="tabBarItem" title="ライブラリ" image="books.vertical.fill" catalog="system" id="Qbx-24-F9r"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="G1d-aZ-26g">
