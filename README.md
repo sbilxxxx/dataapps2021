@@ -12,7 +12,7 @@ http://about.globallab-sendai.com/dateapps2021/it.html
 
 SwiftでMVCアーキテクチャを, インフラにはFirebaseを使用
 ## リール機能
-![リール機能](https://user-images.githubusercontent.com/74953312/117084094-3a928780-ad81-11eb-86eb-22114dc53c88.png)
+![リール機能](https://user-images.githubusercontent.com/74953312/117084628-a6c1bb00-ad82-11eb-92b5-19399e45c084.png)
 ## アーティストページ・マイライブラリ
 ![アーティストページ・マイライブラリ](https://user-images.githubusercontent.com/74953312/117084339-e936c800-ad81-11eb-8df7-de5bbf25a372.png)
 ## 投稿・ライブチケット機能
