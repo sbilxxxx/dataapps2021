@@ -10,9 +10,9 @@ http://about.globallab-sendai.com/dateapps2021/it.html
 
 # Features
 
-SwiftでMVCアーキテクチャを使用
-Firebaseを使用
+SwiftでMVCアーキテクチャを, インフラにはFirebaseを使用
 ## リール機能
 ![リール機能](https://user-images.githubusercontent.com/74953312/117084094-3a928780-ad81-11eb-86eb-22114dc53c88.png)
+
 
 Thank you!
