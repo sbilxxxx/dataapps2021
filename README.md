@@ -16,6 +16,7 @@ SwiftでMVCアーキテクチャを, インフラにはFirebaseを使用
 ## アーティストページ・マイライブラリ
 ![アーティストページ・マイライブラリ](https://user-images.githubusercontent.com/74953312/117084339-e936c800-ad81-11eb-8df7-de5bbf25a372.png)
 ## 投稿・ライブチケット機能
+![post](https://user-images.githubusercontent.com/74953312/117084724-ed171a00-ad82-11eb-806d-996391206e10.png)
 
 
 Thank you!
