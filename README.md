@@ -5,7 +5,10 @@ Newdio App
 GLS-Lab Sendaiが主催する、東北最大級のアプリ開発コンテストDA-TE Apps 2021に向けて作成した。アマチュアミュージシャン向けのMVシェアアプリ
 
 # DA-TE Apps Link
+### 発表動画
+https://www.youtube.com/watch?v=vIpY87LyRPE
 
+### HP
 http://dateapps2021.globallab-sendai.com/
 
 # Features
