@@ -6,7 +6,7 @@ GLS-Lab Sendaiが主催する、東北最大級のアプリ開発コンテスト
 
 # DA-TE Apps Link
 
-http://about.globallab-sendai.com/dateapps2021/it.html
+http://dateapps2021.globallab-sendai.com/
 
 # Features
 
